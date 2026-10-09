@@ -1,0 +1,16 @@
+<?php
+    include_once 'app/conexion.inc.php';
+    include_once 'app/config.inc.php';
+    $connect = new PDO("mysql:host=localhost;dbname=cedisalud_usuario", "cedisalud_jeovani", "Jeovani_0313");
+    $connect -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $connect -> exec("SET CHARACTER SET utf8");
+    $mysqli = new mysqli('localhost', 'cedisalud_jeovani', 'Jeovani_0313','cedisalud_usuario');
+    mysqli_set_charset($mysqli, "utf8"); 
+    if (isset($_POST['cargo_1'])) {
+        $id_admin=$_POST["id_admin"];
+        $cargo=$_POST["cargo_1"];
+        $sql = "INSERT INTO controles_cargo (id_admin, Cargo, Fecha_registro) VALUES ('$id_admin','$cargo',NOW())";
+        $resultado = $mysqli->query($sql);
+    
+    }
+?>    

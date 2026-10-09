@@ -1,0 +1,42 @@
+<?php
+    include_once 'app/conexion.inc.php';
+    include_once 'app/config.inc.php';
+    $connect = new PDO("mysql:host=localhost;dbname=cedisalud_usuario", "cedisalud_jeovani", "Jeovani_0313");
+    $connect -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $connect -> exec("SET CHARACTER SET utf8");
+    $mysqli = new mysqli('localhost', 'cedisalud_jeovani', 'Jeovani_0313','cedisalud_usuario');
+    mysqli_set_charset($mysqli, "utf8"); 
+    if(isset($_POST['centro'])) {
+       $centro =$_POST["centro"];
+       $id_admin =$_POST["id_admin"];
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2018,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2019,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2020,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2021,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2022,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2023,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2024,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);    
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2025,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       $sql = "INSERT INTO controles_ausentismo2 (id_admin, Year, Centro_, Centro_existe, Centro_crear_eliminar, Enero_NNT, Febrero_NNT, Marzo_NNT, Abril_NNT, Mayo_NNT, Junio_NNT, Julio_NNT, Agosto_NNT, Septiembre_NNT, Octubre_NNT, Noviembre_NNT, Diciembre_NNT, Anual_NNT, Enero_HE, Febrero_HE, Marzo_HE, Abril_HE, Mayo_HE, Junio_HE, Julio_HE, Agosto_HE, Septiembre_HE, Octubre_HE, Noviembre_HE, Diciembre_HE, Anual_HE, Enero_HHTP, Febrero_HHTP, Marzo_HHTP, Abril_HHTP, Mayo_HHTP, Junio_HHTP, Julio_HHTP, Agosto_HHTP, Septiembre_HHTP, Octubre_HHTP, Noviembre_HHTP, Diciembre_HHTP, Anual_HHTP) VALUES ('$id_admin',2026,'$centro','#666666','centro_crear',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";                                                              
+       $resultado = $mysqli->query($sql);
+       
+       
+    }
+?> 
