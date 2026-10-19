@@ -1,0 +1,7976 @@
+<?php
+include_once 'app/config.inc.php';
+include_once 'app/conexion.inc.php';
+class Consolidados4 {  
+     public static function CIE10_I_1($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_1 REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_2($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_2  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_3($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_3  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_4($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_4  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_5($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_5  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_6($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_6  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_7($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_7  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_8($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_8  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_9($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_9  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function CIE10_I_10($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE CIE10_10  REGEXP '[I]'  && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+        public static function CIE10_Q_10($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I00X($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I00X' || CIE10_2 = 'I00X' || CIE10_3 = 'I00X' || CIE10_4 = 'I00X' || CIE10_5 = 'I00X' || CIE10_6 = 'I00X' || CIE10_7 = 'I00X' || CIE10_8 = 'I00X' || CIE10_9 = 'I00X' || CIE10_10 = 'I00X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    
+    public static function I010($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I010' || CIE10_2 = 'I010' || CIE10_3 = 'I010' || CIE10_4 = 'I010' || CIE10_5 = 'I010' || CIE10_6 = 'I010' || CIE10_7 = 'I010' || CIE10_8 = 'I010' || CIE10_9 = 'I010' || CIE10_10 = 'I010') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I011($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I011' || CIE10_2 = 'I011' || CIE10_3 = 'I011' || CIE10_4 = 'I011' || CIE10_5 = 'I011' || CIE10_6 = 'I011' || CIE10_7 = 'I011' || CIE10_8 = 'I011' || CIE10_9 = 'I011' || CIE10_10 = 'I011') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I012($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I012' || CIE10_2 = 'I012' || CIE10_3 = 'I012' || CIE10_4 = 'I012' || CIE10_5 = 'I012' || CIE10_6 = 'I012' || CIE10_7 = 'I012' || CIE10_8 = 'I012' || CIE10_9 = 'I012' || CIE10_10 = 'I012') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I018($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I018' || CIE10_2 = 'I018' || CIE10_3 = 'I018' || CIE10_4 = 'I018' || CIE10_5 = 'I018' || CIE10_6 = 'I018' || CIE10_7 = 'I018' || CIE10_8 = 'I018' || CIE10_9 = 'I018' || CIE10_10 = 'I018') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I019($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I019' || CIE10_2 = 'I019' || CIE10_3 = 'I019' || CIE10_4 = 'I019' || CIE10_5 = 'I019' || CIE10_6 = 'I019' || CIE10_7 = 'I019' || CIE10_8 = 'I019' || CIE10_9 = 'I019' || CIE10_10 = 'I019') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I020($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I020' || CIE10_2 = 'I020' || CIE10_3 = 'I020' || CIE10_4 = 'I020' || CIE10_5 = 'I020' || CIE10_6 = 'I020' || CIE10_7 = 'I020' || CIE10_8 = 'I020' || CIE10_9 = 'I020' || CIE10_10 = 'I020') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I029($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I029' || CIE10_2 = 'I029' || CIE10_3 = 'I029' || CIE10_4 = 'I029' || CIE10_5 = 'I029' || CIE10_6 = 'I029' || CIE10_7 = 'I029' || CIE10_8 = 'I029' || CIE10_9 = 'I029' || CIE10_10 = 'I029') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I050($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I050' || CIE10_2 = 'I050' || CIE10_3 = 'I050' || CIE10_4 = 'I050' || CIE10_5 = 'I050' || CIE10_6 = 'I050' || CIE10_7= 'I050' || CIE10_8 = 'I050' || CIE10_9 = 'I050' || CIE10_10 = 'I050') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I051($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I051' || CIE10_2 = 'I051' || CIE10_3 = 'I051' || CIE10_4 = 'I051' || CIE10_5 = 'I051' || CIE10_6 = 'I051' || CIE10_7 = 'I051' || CIE10_8 = 'I051' || CIE10_9 = 'I051' || CIE10_10 = 'I051') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I052($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I052' || CIE10_2 = 'I052' || CIE10_3 = 'I052' || CIE10_4 = 'I052' || CIE10_5 = 'I052' || CIE10_6 = 'I052' || CIE10_7 = 'I052' || CIE10_8 = 'I052' || CIE10_9 = 'I052' || CIE10_10 = 'I052') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I058($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I058' || CIE10_2 = 'I058' || CIE10_3 = 'I058' || CIE10_4 = 'I058' || CIE10_5 = 'I058' || CIE10_6 = 'I058' || CIE10_7 = 'I058' || CIE10_8 = 'I058' || CIE10_9 = 'I058' || CIE10_10 = 'I058') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+    public static function I059($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I059' || CIE10_2 = 'I059' || CIE10_3 = 'I059' || CIE10_4 = 'I059' || CIE10_5 = 'I059' || CIE10_6 = 'I059' || CIE10_7 = 'I059' || CIE10_8 = 'I059' || CIE10_9 = 'I059' || CIE10_10 = 'I059') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I060($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I060' || CIE10_2 = 'I060' || CIE10_3 = 'I060' || CIE10_4 = 'I060' || CIE10_5 = 'I060' || CIE10_6 = 'I060' || CIE10_7 = 'I060' || CIE10_8 = 'I060' || CIE10_9 = 'I060' || CIE10_10 = 'I060') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I061($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I061' || CIE10_2 = 'I061' || CIE10_3 = 'I061' || CIE10_4 = 'I061' || CIE10_5 = 'I061' || CIE10_6 = 'I061' || CIE10_7 = 'I061' || CIE10_8 = 'I061' || CIE10_9 = 'I061' || CIE10_10 = 'I061') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I062($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I062' || CIE10_2 = 'I062' || CIE10_3 = 'I062' || CIE10_4 = 'I062' || CIE10_5 = 'I062' || CIE10_6 = 'I062' || CIE10_7 = 'I062' || CIE10_8 = 'I062' || CIE10_9 = 'I062' || CIE10_10 = 'I062') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I068($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I068' || CIE10_2 = 'I068' || CIE10_3 = 'I068' || CIE10_4 = 'I068' || CIE10_5 = 'I068' || CIE10_6 = 'I068' || CIE10_7 = 'I068' || CIE10_8 = 'I068' || CIE10_9 = 'I068' || CIE10_10 = 'I068') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I069($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I069' || CIE10_2 = 'I069' || CIE10_3 = 'I069' || CIE10_4 = 'I069' || CIE10_5 = 'I069' || CIE10_6 = 'I069' || CIE10_7 = 'I069' || CIE10_8 = 'I069' || CIE10_9 = 'I069' || CIE10_10 = 'I069') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I070($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I070' || CIE10_2 = 'I070' || CIE10_3 = 'I070' || CIE10_4 = 'I070' || CIE10_5 = 'I070' || CIE10_6 = 'I070' || CIE10_7 = 'I070' || CIE10_8 = 'I070' || CIE10_9 = 'I070' || CIE10_10 = 'I070') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I071($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I071' || CIE10_2 = 'I071' || CIE10_3 = 'I071' || CIE10_4 = 'I071' || CIE10_5 = 'I071' || CIE10_6 = 'I071' || CIE10_7 = 'I071' || CIE10_8 = 'I071' || CIE10_9 = 'I071' || CIE10_10 = 'I071') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I072($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I072' || CIE10_2 = 'I072' || CIE10_3 = 'I072' || CIE10_4 = 'I072' || CIE10_5 = 'I072' || CIE10_6 = 'I072' || CIE10_7 = 'I072' || CIE10_8 = 'I072' || CIE10_9 = 'I072' || CIE10_10 = 'I072') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I078($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I078' || CIE10_2 = 'I078' || CIE10_3 = 'I078' || CIE10_4 = 'I078' || CIE10_5 = 'I078' || CIE10_6 = 'I078' || CIE10_7 = 'I078' || CIE10_8 = 'I078' || CIE10_9 = 'I078' || CIE10_10 = 'I078') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I079($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I079' || CIE10_2 = 'I079' || CIE10_3 = 'I079' || CIE10_4 = 'I079' || CIE10_5 = 'I079' || CIE10_6 = 'I079' || CIE10_7 = 'I079' || CIE10_8 = 'I079' || CIE10_9 = 'I079' || CIE10_10 = 'I079') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I080($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I080' || CIE10_2 = 'I080' || CIE10_3 = 'I080' || CIE10_4 = 'I080' || CIE10_5 = 'I080' || CIE10_6 = 'I080' || CIE10_7 = 'I080' || CIE10_8 = 'I080' || CIE10_9 = 'I080' || CIE10_10 = 'I080') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I081($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I081' || CIE10_2 = 'I081' || CIE10_3 = 'I081' || CIE10_4 = 'I081' || CIE10_5 = 'I081' || CIE10_6 = 'I081' || CIE10_7 = 'I081' || CIE10_8 = 'I081' || CIE10_9 = 'I081' || CIE10_10 = 'I081' ) && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I082($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I082' || CIE10_2 = 'I082' || CIE10_3 = 'I082' || CIE10_4 = 'I082' || CIE10_5 = 'I082' || CIE10_6 = 'I082' || CIE10_7 = 'I082' || CIE10_8 = 'I082' || CIE10_9 = 'I082' || CIE10_10 = 'I082') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I083($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I083' || CIE10_2 = 'I083' || CIE10_3 = 'I083' || CIE10_4 = 'I083' || CIE10_5 = 'I083' || CIE10_6 = 'I083' || CIE10_7 = 'I083' || CIE10_8 = 'I083' || CIE10_9 = 'I083' || CIE10_10 = 'I083') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I088($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I088' || CIE10_2 = 'I088' || CIE10_3 = 'I088' || CIE10_4 = 'I088' || CIE10_5 = 'I088' || CIE10_6 = 'I088' || CIE10_7 = 'I088' || CIE10_8 = 'I088' || CIE10_9 = 'I088' || CIE10_10 = 'I088') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I089($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I089' || CIE10_2 = 'I089' || CIE10_3 = 'I089' || CIE10_4 = 'I089' || CIE10_5 = 'I089' || CIE10_6 = 'I089' || CIE10_7 = 'I089' || CIE10_8 = 'I089' || CIE10_9 = 'I089' || CIE10_10 = 'I089') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I090($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I090' || CIE10_2 = 'I090' || CIE10_3 = 'I090' || CIE10_4 = 'I090' || CIE10_5 = 'I090' || CIE10_6 = 'I090' || CIE10_7 = 'I090' || CIE10_8 = 'I090' || CIE10_9 = 'I090' || CIE10_10 = 'I090') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I091($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I00X' || CIE10_2 = 'I00X' || CIE10_3 = 'I00X' || CIE10_4 = 'I00X' || CIE10_5 = 'I00X' || CIE10_6 = 'I00X' || CIE10_7 = 'I00X' || CIE10_8 = 'I00X' || CIE10_9 = 'I00X' || CIE10_10 = 'I00X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I092($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I092' || CIE10_2 = 'I092' || CIE10_3 = 'I092' || CIE10_4 = 'I092' || CIE10_5 = 'I092' || CIE10_6 = 'I092' || CIE10_7 = 'I092' || CIE10_8 = 'I092' || CIE10_9 = 'I092' || CIE10_10 = 'I092') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I098($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I098' || CIE10_2 = 'I098' || CIE10_3 = 'I098' || CIE10_4 = 'I098' || CIE10_5 = 'I098' || CIE10_6 = 'I098' || CIE10_7 = 'I098' || CIE10_8 = 'I098' || CIE10_9 = 'I098' || CIE10_10 = 'I098') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I099($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I099' || CIE10_2 = 'I099' || CIE10_3 = 'I099' || CIE10_4 = 'I099' || CIE10_5 = 'I099' || CIE10_6 = 'I099' || CIE10_7 = 'I099' || CIE10_8 = 'I099' || CIE10_9 = 'I099' || CIE10_10 = 'I099') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I10X($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I10X' || CIE10_2 = 'I10X' || CIE10_3 = 'I10X' || CIE10_4 = 'I10X' || CIE10_5 = 'I10X' || CIE10_6 = 'I10X' || CIE10_7 = 'I10X' || CIE10_8 = 'I10X' || CIE10_9 = 'I10X' || CIE10_10 = 'I10X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+   public static function I110($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I110' || CIE10_2 = 'I110' || CIE10_3 = 'I110' || CIE10_4 = 'I110' || CIE10_5 = 'I110' || CIE10_6 = 'I110' || CIE10_7= 'I110' || CIE10_8 = 'I110' || CIE10_9 = 'I110' || CIE10_10 = 'I110') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I119($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I119' || CIE10_2 = 'I119' || CIE10_3 = 'I119' || CIE10_4 = 'I119' || CIE10_5 = 'I119' || CIE10_6 = 'I119' || CIE10_7 = 'I119' || CIE10_8 = 'I119' || CIE10_9 = 'I119' || CIE10_10 = 'I119') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I120($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I120' || CIE10_2 = 'I20' || CIE10_3 = 'I00X' || CIE10_4 = 'I00X' || CIE10_5 = 'I00X' || CIE10_6 = 'I120' || CIE10_7 = 'I20' || CIE10_8 = 'I00X' || CIE10_9 = 'I00X' || CIE10_10 = 'I00X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I129($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I129' || CIE10_2 = 'I129' || CIE10_3 = 'I129' || CIE10_4 = 'I129' || CIE10_5 = 'I129' || CIE10_6 = 'I129' || CIE10_7 = 'I129' || CIE10_8 = 'I129' || CIE10_9 = 'I129' || CIE10_10 = 'I129') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I130($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I130' || CIE10_2 = 'I130' || CIE10_3 = 'I130' || CIE10_4 = 'I130' || CIE10_5 = 'I130' || CIE10_6 = 'I130' || CIE10_7 = 'I130' || CIE10_8 = 'I130' || CIE10_9 = 'I130' || CIE10_10 = 'I130') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I131($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I131' || CIE10_2 = 'I131' || CIE10_3 = 'I131' || CIE10_4 = 'I131' || CIE10_5 = 'I131' || CIE10_6 = 'I131' || CIE10_7 = 'I131' || CIE10_8 = 'I131' || CIE10_9 = 'I131' || CIE10_10 = 'I131') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I132($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I132' || CIE10_2 = 'I132' || CIE10_3 = 'I132' || CIE10_4 = 'I132' || CIE10_5 = 'I132'|| CIE10_6 = 'I132' || CIE10_7 = 'I132' || CIE10_8 = 'I132' || CIE10_9 = 'I132' || CIE10_10 = 'I132') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I139($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I139' || CIE10_2 = 'I139' || CIE10_3 = 'I139' || CIE10_4 = 'I139' || CIE10_5 = 'I139' || CIE10_6 = 'I139' || CIE10_7 = 'I139' || CIE10_8 = 'I139' || CIE10_9 = 'I139' || CIE10_10 = 'I139') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I150($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I150' || CIE10_2 = 'I150' || CIE10_3 = 'I150' || CIE10_4 = 'I150' || CIE10_5 = 'I150' || CIE10_6 = 'I150' || CIE10_7 = 'I150' || CIE10_8 = 'I150' || CIE10_9 = 'I150' || CIE10_10 = 'I150') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I151($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I151' || CIE10_2 = 'I151' || CIE10_3 = 'I151' || CIE10_4 = 'I151' || CIE10_5 = 'I151' || CIE10_6 = 'I151' || CIE10_7 = 'I151' || CIE10_8 = 'I151' || CIE10_9 = 'I151' || CIE10_10 = 'I151') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I152($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I152' || CIE10_2 = 'I152' || CIE10_3 = 'I152' || CIE10_4 = 'I152' || CIE10_5 = 'I152' || CIE10_6 = 'I152' || CIE10_7 = 'I152' || CIE10_8 = 'I152' || CIE10_9 = 'I152' || CIE10_10 = 'I152') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+    public static function I158($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I158' || CIE10_2 = 'I158' || CIE10_3 = 'I158' || CIE10_4 = 'I158' || CIE10_5 = 'I158' || CIE10_6 = 'I158' || CIE10_7 = 'I158' || CIE10_8 = 'I158' || CIE10_9 = 'I158' || CIE10_10 = 'I158') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+    public static function I159($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I159' || CIE10_2 = 'I159' || CIE10_3 = 'I159' || CIE10_4 = 'I159' || CIE10_5 = 'I159' || CIE10_6 = 'I159' || CIE10_7 = 'I159' || CIE10_8 = 'I159' || CIE10_9 = 'I159' || CIE10_10 = 'I159') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+    public static function I200($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I200' || CIE10_2 = 'I200' || CIE10_3 = 'I200' || CIE10_4 = 'I200' || CIE10_5 = 'I200' || CIE10_6 = 'I200' || CIE10_7 = 'I200' || CIE10_8 = 'I200' || CIE10_9 = 'I200' || CIE10_10 = 'I200') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I201($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I201' || CIE10_2 = 'I201' || CIE10_3 = 'I201' || CIE10_4 = 'I201' || CIE10_5 = 'I201' || CIE10_6 = 'I201' || CIE10_7 = 'I201' || CIE10_8 = 'I201' || CIE10_9 = 'I201' || CIE10_10 = 'I201') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I208($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I208' || CIE10_2 = 'I208' || CIE10_3 = 'I208' || CIE10_4 = 'I208' || CIE10_5 = 'I208' || CIE10_6 = 'I208' || CIE10_7 = 'I208' || CIE10_8 = 'I208' || CIE10_9 = 'I208' || CIE10_10 = 'I208') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I209($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I209' || CIE10_2 = 'I209' || CIE10_3 = 'I209' || CIE10_4 = 'I209' || CIE10_5 = 'I209' || CIE10_6 = 'I209' || CIE10_7 = 'I209' || CIE10_8 = 'I209' || CIE10_9 = 'I209' || CIE10_10 = 'I209') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I210($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I210' || CIE10_2 = 'I210' || CIE10_3 = 'I210' || CIE10_4 = 'I210' || CIE10_5 = 'I210' || CIE10_6 = 'I210' || CIE10_7 = 'I210' || CIE10_8 = 'I210' || CIE10_9 = 'I210' || CIE10_10 = 'I210') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I211($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I211' || CIE10_2 = 'I211' || CIE10_3 = 'I211' || CIE10_4 = 'I211' || CIE10_5 = 'I211' || CIE10_6 = 'I211' || CIE10_7 = 'I211' || CIE10_8 = 'I211' || CIE10_9 = 'I211' || CIE10_10 = 'I211') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I212($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I212' || CIE10_2 = 'I212' || CIE10_3 = 'I212' || CIE10_4 = 'I212' || CIE10_5 = 'I212' || CIE10_6 = 'I212' || CIE10_7 = 'I212' || CIE10_8 = 'I212' || CIE10_9 = 'I212' || CIE10_10 = 'I212') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I213($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I213' || CIE10_2 = 'I213' || CIE10_3 = 'I213' || CIE10_4 = 'I213' || CIE10_5 = 'I213' || CIE10_6 = 'I213' || CIE10_7 = 'I213' || CIE10_8 = 'I213' || CIE10_9 = 'I213' || CIE10_10 = 'I213') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I214($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I214' || CIE10_2 = 'I214' || CIE10_3 = 'I214' || CIE10_4 = 'I214' || CIE10_5 = 'I214' || CIE10_6 = 'I214' || CIE10_7 = 'I214' || CIE10_8 = 'I214' || CIE10_9 = 'I214' || CIE10_10 = 'I214') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I219($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I219' || CIE10_2 = 'I219' || CIE10_3 = 'I219' || CIE10_4 = 'I219' || CIE10_5 = 'I219' || CIE10_6 = 'I219' || CIE10_7 = 'I219' || CIE10_8 = 'I219' || CIE10_9 = 'I219' || CIE10_10 = 'I219') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I220($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I220' || CIE10_2 = 'I220' || CIE10_3 = 'I220' || CIE10_4 = 'I220' || CIE10_5 = 'I220' || CIE10_6 = 'I220' || CIE10_7 = 'I220' || CIE10_8 = 'I220' || CIE10_9 = 'I220' || CIE10_10 = 'I220') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I221($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I221' || CIE10_2 = 'I221' || CIE10_3 = 'I221' || CIE10_4 = 'I221' || CIE10_5 = 'I221' || CIE10_6 = 'I221' || CIE10_7 = 'I221' || CIE10_8 = 'I221' || CIE10_9 = 'I221' || CIE10_10 = 'I221') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I228($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I228' || CIE10_2 = 'I228' || CIE10_3 = 'I228' || CIE10_4 = 'I228' || CIE10_5 = 'I228' || CIE10_6 = 'I228' || CIE10_7 = 'I228' || CIE10_8 = 'I228' || CIE10_9 = 'I228' || CIE10_10 = 'I228') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I229($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I229' || CIE10_2 = 'I229' || CIE10_3 = 'I229' || CIE10_4 = 'I229' || CIE10_5 = 'I229' || CIE10_6 = 'I229' || CIE10_7 = 'I229' || CIE10_8 = 'I229' || CIE10_9 = 'I229' || CIE10_10 = 'I229') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I230($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I230' || CIE10_2 = 'I230' || CIE10_3 = 'I230' || CIE10_4 = 'I230' || CIE10_5 = 'I230' || CIE10_6 = 'I230' || CIE10_7 = 'I230' || CIE10_8 = 'I230' || CIE10_9 = 'I230' || CIE10_10 = 'I230') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I231($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I231' || CIE10_2 = 'I231' || CIE10_3 = 'I231' || CIE10_4 = 'I231' || CIE10_5 = 'I231' || CIE10_6 = 'I231' || CIE10_7 = 'I231' || CIE10_8 = 'I231' || CIE10_9 = 'I231' || CIE10_10 = 'I231') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I232($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I232' || CIE10_2 = 'I232' || CIE10_3 = 'I232' || CIE10_4 = 'I232' || CIE10_5 = 'I232' || CIE10_6 = 'I232' || CIE10_7 = 'I232' || CIE10_8 = 'I232' || CIE10_9 = 'I232' || CIE10_10 = 'I232') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I233($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I233' || CIE10_2 = 'I233' || CIE10_3 = 'I233' || CIE10_4 = 'I233' || CIE10_5 = 'I233' || CIE10_6 = 'I233' || CIE10_7 = 'I233' || CIE10_8 = 'I233' || CIE10_9 = 'I233' || CIE10_10 = 'I233') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I234($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I234' || CIE10_2 = 'I234' || CIE10_3 = 'I234' || CIE10_4 = 'I234' || CIE10_5 = 'I234' || CIE10_6 = 'I234' || CIE10_7 = 'I234' || CIE10_8 = 'I234' || CIE10_9 = 'I234' || CIE10_10 = 'I234') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I235($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I235' || CIE10_2 = 'I235' || CIE10_3 = 'I235' || CIE10_4 = 'I235' || CIE10_5 = 'I235' || CIE10_6 = 'I235' || CIE10_7 = 'I235' || CIE10_8 = 'I235' || CIE10_9 = 'I235' || CIE10_10 = 'I235') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I236($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I236' || CIE10_2 = 'I236' || CIE10_3 = 'I236' || CIE10_4 = 'I236' || CIE10_5 = 'I236' || CIE10_6 = 'I236' || CIE10_7 = 'I236' || CIE10_8 = 'I236' || CIE10_9 = 'I236' || CIE10_10 = 'I236') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I238($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I238' || CIE10_2 = 'I238' || CIE10_3 = 'I238' || CIE10_4 = 'I238' || CIE10_5 = 'I238' || CIE10_6 = 'I238' || CIE10_7 = 'I238' || CIE10_8 = 'I238' || CIE10_9 = 'I238' || CIE10_10 = 'I238') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I240($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I240' || CIE10_2 = 'I240' || CIE10_3 = 'I240' || CIE10_4 = 'I240' || CIE10_5 = 'I240') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I241($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I241' || CIE10_2 = 'I241' || CIE10_3 = '241' || CIE10_4 = 'I241' || CIE10_5 = 'I241' || CIE10_6 = 'I241' || CIE10_7 = 'I241' || CIE10_8 = '241' || CIE10_9 = 'I241' || CIE10_10 = 'I241') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I248($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I248' || CIE10_2 = 'I248' || CIE10_3 = 'I248' || CIE10_4 = 'I248' || CIE10_5 = 'I248' || CIE10_6 = 'I248' || CIE10_7 = 'I248' || CIE10_8 = 'I248' || CIE10_9 = 'I248' || CIE10_10 = 'I248') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I249($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I249' || CIE10_2 = 'I249' || CIE10_3 = 'I249' || CIE10_4 = 'I249' || CIE10_5 = 'I249' || CIE10_6 = 'I249' || CIE10_7 = 'I249' || CIE10_8 = 'I249' || CIE10_9 = 'I249' || CIE10_10 = 'I249') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I250($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I250' || CIE10_2 = 'I250' || CIE10_3 = 'I250' || CIE10_4 = 'I250' || CIE10_5 = 'I250' || CIE10_6 = 'I250' || CIE10_7 = 'I250' || CIE10_8 = 'I250' || CIE10_9 = 'I250' || CIE10_10 = 'I250') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I251($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I251' || CIE10_2 = 'I251' || CIE10_3 = 'I251' || CIE10_4 = 'I251' || CIE10_5 = 'I251' || CIE10_6 = 'I251' || CIE10_7 = 'I251' || CIE10_8 = 'I251' || CIE10_9 = 'I251' || CIE10_10 = 'I251') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I252($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I252' || CIE10_2 = 'I252' || CIE10_3 = 'I252' || CIE10_4 = 'I252' || CIE10_5 = 'I252' || CIE10_6 = 'I252' || CIE10_7 = 'I252' || CIE10_8 = 'I252' || CIE10_9 = 'I252' || CIE10_10 = 'I252') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I253($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I253' || CIE10_2 = 'I253' || CIE10_3 = 'I253' || CIE10_4 = 'I253' || CIE10_5 = 'I253' || CIE10_6 = 'I253' || CIE10_7 = 'I253' || CIE10_8 = 'I253' || CIE10_9 = 'I253' || CIE10_10 = 'I253') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I254($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I254' || CIE10_2 = 'I254' || CIE10_3 = 'I254' || CIE10_4 = 'I254' || CIE10_5 = 'I254' || CIE10_6 = 'I254' || CIE10_7 = 'I254' || CIE10_8 = 'I254' || CIE10_9 = 'I254' || CIE10_10 = 'I254') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I255($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I255' || CIE10_2 = 'I255' || CIE10_3 = 'I255' || CIE10_4 = 'I255' || CIE10_5 = 'I255' || CIE10_6 = 'I255' || CIE10_7 = 'I255' || CIE10_8 = 'I255' || CIE10_9 = 'I255' || CIE10_10 = 'I255') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I256($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I256' || CIE10_2 = 'I256' || CIE10_3 = 'I256' || CIE10_4 = 'I256' || CIE10_5 = 'I256' || CIE10_6 = 'I256' || CIE10_7 = 'I256' || CIE10_8 = 'I256' || CIE10_9 = 'I256' || CIE10_10 = 'I256') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I258($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I258' || CIE10_2 = 'I258' || CIE10_3 = 'I258' || CIE10_4 = 'I258' || CIE10_5 = 'I258' || CIE10_6 = 'I258' || CIE10_7 = 'I258' || CIE10_8 = 'I258' || CIE10_9 = 'I258' || CIE10_10 = 'I258') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I259($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I259' || CIE10_2 = 'I259' || CIE10_3 = 'I259' || CIE10_4 = 'I259' || CIE10_5 = 'I259' || CIE10_6 = 'I259' || CIE10_7 = 'I259' || CIE10_8 = 'I259' || CIE10_9 = 'I259' || CIE10_10 = 'I259') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I260($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I260' || CIE10_2 = 'I260' || CIE10_3 = 'I260' || CIE10_4 = 'I260' || CIE10_5 = 'I260' || CIE10_6 = 'I260' || CIE10_7 = 'I260' || CIE10_8 = 'I260' || CIE10_9 = 'I260' || CIE10_10 = 'I260') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I269($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I269' || CIE10_2 = 'I269' || CIE10_3 = 'I269' || CIE10_4 = 'I269' || CIE10_5 = 'I269' || CIE10_6 = 'I269' || CIE10_7 = 'I269' || CIE10_8 = 'I269' || CIE10_9 = 'I269' || CIE10_10 = 'I269') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I270($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I270' || CIE10_2 = 'I270' || CIE10_3 = 'I270' || CIE10_4 = 'I270' || CIE10_5 = 'I270' || CIE10_6 = 'I270' || CIE10_7 = 'I270' || CIE10_8 = 'I270' || CIE10_9 = 'I270' || CIE10_10 = 'I270') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I271($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I271' || CIE10_2 = 'I271' || CIE10_3 = 'I271' || CIE10_4 = 'I271' || CIE10_5 = 'I271' || CIE10_6 = 'I271' || CIE10_7 = 'I271' || CIE10_8 = 'I271' || CIE10_9 = 'I271' || CIE10_10 = 'I271') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I272($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I272' || CIE10_2 = 'I272' || CIE10_3 = 'I272' || CIE10_4 = 'I272' || CIE10_5 = 'I272' || CIE10_6 = 'I272' || CIE10_7 = 'I272' || CIE10_8 = 'I272' || CIE10_9 = 'I272' || CIE10_10 = 'I272') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I278($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I278' || CIE10_2 = 'I278' || CIE10_3 = 'I278' || CIE10_4 = 'I278' || CIE10_5 = 'I278' || CIE10_6 = 'I278' || CIE10_7 = 'I278' || CIE10_8 = 'I278' || CIE10_9 = 'I278' || CIE10_10 = 'I278') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I279($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I279' || CIE10_2 = 'I279' || CIE10_3 = 'I279' || CIE10_4 = 'I279' || CIE10_5 = 'I279' || CIE10_6 = 'I279' || CIE10_7 = 'I279' || CIE10_8 = 'I279' || CIE10_9 = 'I279' || CIE10_10 = 'I279') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I280($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I280' || CIE10_2 = 'I280' || CIE10_3 = 'I280' || CIE10_4 = 'I280' || CIE10_5 = 'I280' || CIE10_6 = 'I280' || CIE10_7 = 'I280' || CIE10_8 = 'I280' || CIE10_9 = 'I280' || CIE10_10 = 'I280') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I281($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I281' || CIE10_2 = 'I281' || CIE10_3 = 'I281' || CIE10_4 = 'I281' || CIE10_5 = 'I281' || CIE10_6 = 'I281' || CIE10_7 = 'I281' || CIE10_8 = 'I281' || CIE10_9 = 'I281' || CIE10_10 = 'I281') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I288($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I288' || CIE10_2 = 'I288' || CIE10_3 = 'I288' || CIE10_4 = 'I288' || CIE10_5 = 'I288' || CIE10_6 = 'I288' || CIE10_7 = 'I288' || CIE10_8 = 'I288' || CIE10_9 = 'I288' || CIE10_10 = 'I288') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I289($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I289' || CIE10_2 = 'I289' || CIE10_3 = 'I289' || CIE10_4 = 'I289' || CIE10_5 = 'I289' || CIE10_6 = 'I289' || CIE10_7 = 'I289' || CIE10_8 = 'I289' || CIE10_9 = 'I289' || CIE10_10 = 'I289') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I300($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I300' || CIE10_2 = 'I300' || CIE10_3 = 'I300' || CIE10_4 = 'I300' || CIE10_5 = 'I300' || CIE10_6 = 'I300' || CIE10_7 = 'I300' || CIE10_8 = 'I300' || CIE10_9 = 'I300' || CIE10_10 = 'I300') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    } 
+
+public static function I301($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I301' || CIE10_2 = 'I301' || CIE10_3 = 'I301' || CIE10_4 = 'I301' || CIE10_5 = 'I301' || CIE10_6 = 'I301' || CIE10_7 = 'I301' || CIE10_8 = 'I301' || CIE10_9 = 'I301' || CIE10_10 = 'I301') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I308($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I308' || CIE10_2 = 'I308' || CIE10_3 = 'I308' || CIE10_4 = 'I308' || CIE10_5 = 'I308' || CIE10_6 = 'I308' || CIE10_7 = 'I308' || CIE10_8 = 'I308' || CIE10_9 = 'I308' || CIE10_10 = 'I308') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I309($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I309' || CIE10_2 = 'I309' || CIE10_3 = 'I309' || CIE10_4 = 'I309' || CIE10_5 = 'I309' || CIE10_6 = 'I309' || CIE10_7 = 'I309' || CIE10_8 = 'I309' || CIE10_9 = 'I309' || CIE10_10 = 'I309') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I310($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I310' || CIE10_2 = 'I310' || CIE10_3 = 'I310' || CIE10_4 = 'I310' || CIE10_5 = 'I310' || CIE10_6 = 'I310' || CIE10_7 = 'I310' || CIE10_8 = 'I310' || CIE10_9 = 'I310' || CIE10_10 = 'I310') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I311($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I311' || CIE10_2 = 'I311' || CIE10_3 = 'I311' || CIE10_4 = 'I311' || CIE10_5 = 'I311' || CIE10_6 = 'I311' || CIE10_7 = 'I311' || CIE10_8 = 'I311' || CIE10_9 = 'I311' || CIE10_10 = 'I311') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I312($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I312' || CIE10_2 = 'I312' || CIE10_3 = 'I312' || CIE10_4 = 'I312' || CIE10_5 = 'I312' || CIE10_6 = 'I312' || CIE10_7 = 'I312' || CIE10_8 = 'I312' || CIE10_9 = 'I312' || CIE10_10 = 'I312') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I313($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I313' || CIE10_2 = 'I313' || CIE10_3 = 'I313' || CIE10_4 = 'I313' || CIE10_5 = 'I313' || CIE10_6 = 'I313' || CIE10_7 = 'I313' || CIE10_8 = 'I313' || CIE10_9 = 'I313' || CIE10_10 = 'I313') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I318($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I318' || CIE10_2 = 'I318' || CIE10_3 = 'I318' || CIE10_4 = 'I318' || CIE10_5 = 'I318' || CIE10_6 = 'I318' || CIE10_7 = 'I318' || CIE10_8 = 'I318' || CIE10_9 = 'I318' || CIE10_10 = 'I318') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I319($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I319' || CIE10_2 = 'I319' || CIE10_3 = 'I319' || CIE10_4 = 'I319' || CIE10_5 = 'I319' || CIE10_6 = 'I319' || CIE10_7 = 'I319' || CIE10_8 = 'I319' || CIE10_9 = 'I319' || CIE10_10 = 'I319') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I320($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I320' || CIE10_2 = 'I320' || CIE10_3 = 'I320' || CIE10_4 = 'I320' || CIE10_5 = 'I320' || CIE10_6 = 'I320' || CIE10_7 = 'I320' || CIE10_8 = 'I320' || CIE10_9 = 'I320' || CIE10_10 = 'I320') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I321($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I321' || CIE10_2 = 'I321' || CIE10_3 = 'I321' || CIE10_4 = 'I321' || CIE10_5 = 'I321' || CIE10_6 = 'I321' || CIE10_7 = 'I321' || CIE10_8 = 'I321' || CIE10_9 = 'I321' || CIE10_10 = 'I321') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I328($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I328' || CIE10_2 = 'I328' || CIE10_3 = 'I328' || CIE10_4 = 'I328' || CIE10_5 = 'I328' || CIE10_6 = 'I328' || CIE10_7 = 'I328' || CIE10_8 = 'I328' || CIE10_9 = 'I328' || CIE10_10 = 'I328') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I330($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I330' || CIE10_2 = 'I330' || CIE10_3 = 'I330' || CIE10_4 = 'I330' || CIE10_5 = 'I330' || CIE10_6 = 'I330' || CIE10_7 = 'I330' || CIE10_8 = 'I330' || CIE10_9 = 'I330' || CIE10_10 = 'I330') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I339($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I339' || CIE10_2 = 'I339' || CIE10_3 = 'I339' || CIE10_4 = 'I339' || CIE10_5 = 'I339' || CIE10_6 = 'I339' || CIE10_7 = 'I339' || CIE10_8 = 'I339' || CIE10_9 = 'I339' || CIE10_10 = 'I339') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I340($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I340' || CIE10_2 = 'I340' || CIE10_3 = 'I340' || CIE10_4 = 'I340' || CIE10_5 = 'I340' ||  CIE10_6 = 'I340' || CIE10_7 = 'I340' || CIE10_8 = 'I340' || CIE10_9 = 'I340' || CIE10_10 = 'I340' ) && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I341($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I341' || CIE10_2 = 'I341' || CIE10_3 = 'I341' || CIE10_4 = 'I341' || CIE10_5 = 'I341' || CIE10_6 = 'I341' || CIE10_7 = 'I341' || CIE10_8 = 'I341' || CIE10_9 = 'I341' || CIE10_10 = 'I341') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I342($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I342' || CIE10_2 = 'I342' || CIE10_3 = 'I342' || CIE10_4 = 'I342' || CIE10_5 = 'I342' || CIE10_6 = 'I342' || CIE10_7 = 'I342' || CIE10_8 = 'I342' || CIE10_9 = 'I342' || CIE10_10 = 'I342') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I348($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I348' || CIE10_2 = 'I348' || CIE10_3 = 'I348' || CIE10_4 = 'I348' || CIE10_5 = 'I348' || CIE10_6 = 'I348' || CIE10_7 = 'I348' || CIE10_8 = 'I348' || CIE10_9 = 'I348' || CIE10_10 = 'I348') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I349($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I349' || CIE10_2 = 'I349' || CIE10_3 = 'I349' || CIE10_4 = 'I349' || CIE10_5 = 'I349' || CIE10_6 = 'I349' || CIE10_7 = 'I349' || CIE10_8 = 'I349' || CIE10_9 = 'I349' || CIE10_10 = 'I349') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I350($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I350' || CIE10_2 = 'I350' || CIE10_3 = 'I350' || CIE10_4 = 'I350' || CIE10_5 = 'I350' || CIE10_6 = 'I350' || CIE10_7 = 'I350' || CIE10_8 = 'I350' || CIE10_9 = 'I350' || CIE10_10 = 'I350') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I351($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I351' || CIE10_2 = 'I351' || CIE10_3 = 'I351' || CIE10_4 = 'I351' || CIE10_5 = 'I351' || CIE10_6 = 'I351' || CIE10_7 = 'I351' || CIE10_8 = 'I351' || CIE10_9 = 'I351' || CIE10_10 = 'I351') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I352($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I352' || CIE10_2 = 'I352' || CIE10_3 = 'I352' || CIE10_4 = 'I352' || CIE10_5 = 'I352' || CIE10_6 = 'I352' || CIE10_7 = 'I352' || CIE10_8 = 'I352' || CIE10_9 = 'I352' || CIE10_10 = 'I352') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I358($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I358' || CIE10_2 = 'I358' || CIE10_3 = 'I358' || CIE10_4 = 'I358' || CIE10_5 = 'I358' || CIE10_6 = 'I358' || CIE10_7 = 'I358' || CIE10_8 = 'I358' || CIE10_9 = 'I358' || CIE10_10 = 'I358') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I359($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I359' || CIE10_2 = 'I359' || CIE10_3 = 'I359' || CIE10_4 = 'I359' || CIE10_5 = 'I359' || CIE10_6 = 'I359' || CIE10_7 = 'I359' || CIE10_8 = 'I359' || CIE10_9 = 'I359' || CIE10_10 = 'I359') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I360($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I360' || CIE10_2 = 'I360' || CIE10_3 = 'I360' || CIE10_4 = 'I360' || CIE10_5 = 'I360' || CIE10_6 = 'I360' || CIE10_7 = 'I360' || CIE10_8 = 'I360' || CIE10_9 = 'I360' || CIE10_10 = 'I360') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I361($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I361' || CIE10_2 = 'I361' || CIE10_3 = 'I361' || CIE10_4 = 'I361' || CIE10_5 = 'I361' || CIE10_6 = 'I361' || CIE10_7 = 'I361' || CIE10_8 = 'I361' || CIE10_9 = 'I361' || CIE10_10 = 'I361') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I362($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I362' || CIE10_2 = 'I362' || CIE10_3 = 'I362' || CIE10_4 = 'I362' || CIE10_5 = 'I362' || CIE10_6 = 'I362' || CIE10_7 = 'I362' || CIE10_8 = 'I362' || CIE10_9 = 'I362' || CIE10_10 = 'I362') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I368($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I368' || CIE10_2 = 'I368' || CIE10_3 = 'I368' || CIE10_4 = 'I368' || CIE10_5 = 'I368' || CIE10_6 = 'I368' || CIE10_7 = 'I368' || CIE10_8 = 'I368' || CIE10_9 = 'I368' || CIE10_10 = 'I368') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I369($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I369' || CIE10_2 = 'I369' || CIE10_3 = 'I369' || CIE10_4 = 'I369' || CIE10_5 = 'I369' || CIE10_6 = 'I369' || CIE10_7 = 'I369' || CIE10_8 = 'I369' || CIE10_9 = 'I369' || CIE10_10 = 'I369') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I370($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I370' || CIE10_2 = 'I370' || CIE10_3 = 'I370' || CIE10_4 = 'I370' || CIE10_5 = 'I370' || CIE10_6 = 'I370' || CIE10_7 = 'I370' || CIE10_8 = 'I370' || CIE10_9 = 'I370' || CIE10_10 = 'I370') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I371($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I371' || CIE10_2 = 'I371' || CIE10_3 = 'I371' || CIE10_4 = 'I371' || CIE10_5 = 'I371' || CIE10_6 = 'I371' || CIE10_7 = 'I371' || CIE10_8 = 'I371' || CIE10_9 = 'I371' || CIE10_10 = 'I371') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I372($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I372' || CIE10_2 = 'I372' || CIE10_3 = 'I372' || CIE10_4 = 'I372' || CIE10_5 = 'I372' || CIE10_6 = 'I372' || CIE10_7 = 'I372' || CIE10_8 = 'I372' || CIE10_9 = 'I372' || CIE10_10 = 'I372') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I378($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I378' || CIE10_2 = 'I378' || CIE10_3 = 'I378' || CIE10_4 = 'I378' || CIE10_5 = 'I378' || CIE10_6 = 'I378' || CIE10_7 = 'I378' || CIE10_8 = 'I378' || CIE10_9 = 'I378' || CIE10_10 = 'I378') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I379($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I379' || CIE10_2 = 'I379' || CIE10_3 = 'I379' || CIE10_4 = 'I379' || CIE10_5 = 'I379' || CIE10_6 = 'I379' || CIE10_7 = 'I379' || CIE10_8 = 'I379' || CIE10_9 = 'I379' || CIE10_10 = 'I379') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I38X($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I38X' || CIE10_2 = 'I38X' || CIE10_3 = 'I38X' || CIE10_4 = 'I38X' || CIE10_5 = 'I38X' || CIE10_6 = 'I38X' || CIE10_7 = 'I38X' || CIE10_8 = 'I38X' || CIE10_9 = 'I38X' || CIE10_10 = 'I38X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I390($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I390' || CIE10_2 = 'I390' || CIE10_3 = 'I390' || CIE10_4 = 'I390' || CIE10_5 = 'I390' || CIE10_6 = 'I390' || CIE10_7 = 'I390' || CIE10_8 = 'I390' || CIE10_9 = 'I390' || CIE10_10 = 'I390') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I391($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I391' || CIE10_2 = 'I391' || CIE10_3 = 'I391' || CIE10_4 = 'I391' || CIE10_5 = 'I391' || CIE10_6 = 'I391' || CIE10_7 = 'I391' || CIE10_8 = 'I391' || CIE10_9 = 'I391' || CIE10_10 = 'I391') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I392($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I392' || CIE10_2 = 'I392' || CIE10_3 = 'I392' || CIE10_4 = 'I392' || CIE10_5 = 'I392' || CIE10_6 = 'I392' || CIE10_7 = 'I392' || CIE10_8 = 'I392' || CIE10_9 = 'I392' || CIE10_10 = 'I392') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I393($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I393' || CIE10_2 = 'I393' || CIE10_3 = 'I393' || CIE10_4 = 'I393' || CIE10_5 = 'I393' || CIE10_6 = 'I393' || CIE10_7 = 'I393' || CIE10_8 = 'I393' || CIE10_9 = 'I393' || CIE10_10 = 'I393') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I394($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I394' || CIE10_2 = 'I394' || CIE10_3 = 'I394' || CIE10_4 = 'I394' || CIE10_5 = 'I394' || CIE10_6 = 'I394' || CIE10_7 = 'I394' || CIE10_8 = 'I394' || CIE10_9 = 'I394' || CIE10_10 = 'I394') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I398($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I398' || CIE10_2 = 'I398' || CIE10_3 = 'I398' || CIE10_4 = 'I398' || CIE10_5 = 'I398' || CIE10_6 = 'I394' || CIE10_7 = 'I394' || CIE10_8 = 'I394' || CIE10_9 = 'I394' || CIE10_10 = 'I394') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }  
+  
+public static function I400($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I400' || CIE10_2 = 'I400' || CIE10_3 = 'I400' || CIE10_4 = 'I400' || CIE10_5 = 'I400' || CIE10_6 = 'I400' || CIE10_7 = 'I400' || CIE10_8 = 'I400' || CIE10_9 = 'I400' || CIE10_10 = 'I400') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I401($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I401' || CIE10_2 = 'I401' || CIE10_3 = 'I401' || CIE10_4 = 'I401' || CIE10_5 = 'I401' || CIE10_6 = 'I401' || CIE10_7 = 'I401' || CIE10_8 = 'I401' || CIE10_9 = 'I401' || CIE10_10 = 'I401') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I408($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I408' || CIE10_2 = 'I408' || CIE10_3 = 'I408' || CIE10_4 = 'I408' || CIE10_5 = 'I408' || CIE10_6 = 'I408' || CIE10_7 = 'I408' || CIE10_8 = 'I408' || CIE10_9 = 'I408' || CIE10_10 = 'I408') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I409($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I409' || CIE10_2 = 'I409' || CIE10_3 = 'I409' || CIE10_4 = 'I409' || CIE10_5 = 'I409' || CIE10_6 = 'I409' || CIE10_7 = 'I409' || CIE10_8 = 'I409' || CIE10_9 = 'I409' || CIE10_10 = 'I409') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I410($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I410' || CIE10_2 = 'I410' || CIE10_3 = 'I410' || CIE10_4 = 'I401' || CIE10_5 = 'I401' || CIE10_6 = 'I410' || CIE10_7 = 'I410' || CIE10_8 = 'I410' || CIE10_9 = 'I401' || CIE10_10 = 'I401') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I411($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I411' || CIE10_2 = 'I411' || CIE10_3 = 'I411' || CIE10_4 = 'I411' || CIE10_5 = 'I411' || CIE10_6 = 'I411' || CIE10_7 = 'I411' || CIE10_8 = 'I411' || CIE10_9 = 'I411' || CIE10_10 = 'I411') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I412($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I412' || CIE10_2 = 'I412' || CIE10_3 = 'I412' || CIE10_4 = 'I412' || CIE10_5 = 'I412' || CIE10_6 = 'I412' || CIE10_7 = 'I412' || CIE10_8 = 'I412' || CIE10_9 = 'I412' || CIE10_10 = 'I412') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I418($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I418' || CIE10_2 = 'I418' || CIE10_3 = 'I418' || CIE10_4 = 'I418' || CIE10_5 = 'I418' || CIE10_6 = 'I418' || CIE10_7 = 'I418' || CIE10_8= 'I418' || CIE10_9 = 'I418' || CIE10_10 = 'I418') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I420($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I420' || CIE10_2 = 'I420' || CIE10_3 = 'I420' || CIE10_4 = 'I420' || CIE10_5 = 'I420' || CIE10_6 = 'I420' || CIE10_7 = 'I420' || CIE10_8 = 'I420' || CIE10_9 = 'I420' || CIE10_10 = 'I420') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I421($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I421' || CIE10_2 = 'I421' || CIE10_3 = 'I421' || CIE10_4 = 'I421' || CIE10_5 = 'I421' || CIE10_6 = 'I421' || CIE10_7 = 'I421' || CIE10_8 = 'I421' || CIE10_9 = 'I421' || CIE10_10 = 'I421') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I422($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I422' || CIE10_2 = 'I422' || CIE10_3 = 'I422' || CIE10_4 = 'I422' || CIE10_5 = 'I422' || CIE10_6 = 'I422' || CIE10_7 = 'I422' || CIE10_8 = 'I422' || CIE10_9 = 'I422' || CIE10_10 = 'I422') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I423($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I423' || CIE10_2 = 'I423' || CIE10_3 = 'I423' || CIE10_4 = 'I423' || CIE10_5 = 'I423' || CIE10_6 = 'I423' || CIE10_7 = 'I423' || CIE10_8 = 'I423' || CIE10_9 = 'I423' || CIE10_10 = 'I423') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I424($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I424' || CIE10_2 = 'I424' || CIE10_3 = 'I424' || CIE10_4 = 'I424' || CIE10_5 = 'I424' || CIE10_6 = 'I424' || CIE10_7 = 'I424' || CIE10_8 = 'I424' || CIE10_9 = 'I424' || CIE10_10 = 'I424') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I425($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I425' || CIE10_2 = 'I425' || CIE10_3 = 'I425' || CIE10_4 = 'I425' || CIE10_5 = 'I425' || CIE10_6 = 'I425' || CIE10_7 = 'I425' || CIE10_8 = 'I425' || CIE10_9 = 'I425' || CIE10_10 = 'I425') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I426($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I426' || CIE10_2 = 'I426' || CIE10_3 = 'I426' || CIE10_4 = 'I426' || CIE10_5 = 'I426' || CIE10_6 = 'I426' || CIE10_7 = 'I426' || CIE10_8 = 'I426' || CIE10_9 = 'I426' || CIE10_10 = 'I426') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I427($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I427' || CIE10_2 = 'I427' || CIE10_3 = 'I427' || CIE10_4 = 'I427' || CIE10_5 = 'I427' || CIE10_6 = 'I427' || CIE10_7 = 'I427' || CIE10_8 = 'I427' || CIE10_9 = 'I427' || CIE10_10 = 'I427') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I428($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I428' || CIE10_2 = 'I428' || CIE10_3 = 'I428' || CIE10_4 = 'I428' || CIE10_5 = 'I428' || CIE10_6 = 'I428' || CIE10_7 = 'I428' || CIE10_8 = 'I428' || CIE10_9 = 'I428' || CIE10_10 = 'I428') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I429($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I429' || CIE10_2 = 'I429' || CIE10_3 = 'I429' || CIE10_4 = 'I429' || CIE10_5 = 'I429' || CIE10_6 = 'I429' || CIE10_7 = 'I429' || CIE10_8 = 'I429' || CIE10_9 = 'I429' || CIE10_10 = 'I429') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I430($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I430' || CIE10_2 = 'I430' || CIE10_3 = 'I430' || CIE10_4 = 'I430' || CIE10_5 = 'I430' || CIE10_6 = 'I430' || CIE10_7 = 'I430' || CIE10_8 = 'I430' || CIE10_9 = 'I430' || CIE10_10 = 'I430') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I431($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I431' || CIE10_2 = 'I431' || CIE10_3 = 'I431' || CIE10_4 = 'I431' || CIE10_5 = 'I431' || CIE10_6 = 'I431' || CIE10_7 = 'I431' || CIE10_8 = 'I431' || CIE10_9 = 'I431' || CIE10_10 = 'I431') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I432($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I432' || CIE10_2 = 'I432' || CIE10_3 = 'I432' || CIE10_4 = 'I432' || CIE10_5 = 'I432' || CIE10_6 = 'I432' || CIE10_7 = 'I432' || CIE10_8 = 'I432' || CIE10_9 = 'I432' || CIE10_10 = 'I432') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I438($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I438' || CIE10_2 = 'I438' || CIE10_3 = 'I438' || CIE10_4 = 'I438' || CIE10_5 = 'I438' || CIE10_6 = 'I438' || CIE10_7 = 'I438' || CIE10_8 = 'I438' || CIE10_9 = 'I438' || CIE10_10 = 'I438') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I440($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I440' || CIE10_2 = 'I440' || CIE10_3 = 'I440' || CIE10_4 = 'I440' || CIE10_5 = 'I440' || CIE10_6 = 'I440' || CIE10_7 = 'I440' || CIE10_8 = 'I440' || CIE10_9 = 'I440' || CIE10_10 = 'I440') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I441($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I441' || CIE10_2 = 'I441' || CIE10_3 = 'I441' || CIE10_4 = 'I441' || CIE10_5 = 'I441' || CIE10_6 = 'I441' || CIE10_7 = 'I441' || CIE10_8 = 'I441' || CIE10_9 = 'I441' || CIE10_10 = 'I441') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I442($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I442' || CIE10_2 = 'I442' || CIE10_3 = 'I442' || CIE10_4 = 'I442' || CIE10_5 = 'I442' || CIE10_6 = 'I442' || CIE10_7 = 'I442' || CIE10_8 = 'I442' || CIE10_9 = 'I442' || CIE10_10 = 'I442') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I443($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I443' || CIE10_2 = 'I443' || CIE10_3 = 'I443' || CIE10_4 = 'I443' || CIE10_5 = 'I443' || CIE10_6 = 'I443' || CIE10_7 = 'I443' || CIE10_8 = 'I443' || CIE10_9 = 'I443' || CIE10_10 = 'I443') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I444($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I444' || CIE10_2 = 'I444' || CIE10_3 = 'I444' || CIE10_4 = 'I444' || CIE10_5 = 'I444' || CIE10_6 = 'I444' || CIE10_7 = 'I444' || CIE10_8 = 'I444' || CIE10_9 = 'I444' || CIE10_10 = 'I444') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I445($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I445' || CIE10_2 = 'I445' || CIE10_3 = 'I445' || CIE10_4 = 'I445' || CIE10_5 = 'I445' || CIE10_6 = 'I445' || CIE10_7 = 'I445' || CIE10_8 = 'I445' || CIE10_9 = 'I445' || CIE10_10 = 'I445') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I446($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I446' || CIE10_2 = 'I446' || CIE10_3 = 'I446' || CIE10_4 = 'I446' || CIE10_5 = 'I446' || CIE10_6 = 'I446' || CIE10_7 = 'I446' || CIE10_8 = 'I446' || CIE10_9 = 'I446' || CIE10_10 = 'I446') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I447($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I447' || CIE10_2 = 'I447' || CIE10_3 = 'I447' || CIE10_4 = 'I447' || CIE10_5 = 'I447' || CIE10_6 = 'I447' || CIE10_7 = 'I447' || CIE10_8 = 'I447' || CIE10_9 = 'I447' || CIE10_10 = 'I447') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I450($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I450' || CIE10_2 = 'I450' || CIE10_3 = 'I450' || CIE10_4 = 'I450' || CIE10_5 = 'I450' || CIE10_6 = 'I450' || CIE10_7 = 'I450' || CIE10_8 = 'I450' || CIE10_9 = 'I450' || CIE10_10 = 'I450') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I451($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I451' || CIE10_2 = 'I451' || CIE10_3 = 'I451' || CIE10_4 = 'I451' || CIE10_5 = 'I451' || CIE10_6 = 'I451' || CIE10_7 = 'I451' || CIE10_8 = 'I451' || CIE10_9 = 'I451' || CIE10_10 = 'I451') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I452($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I452' || CIE10_2 = 'I452' || CIE10_3 = 'I452' || CIE10_4 = 'I452' || CIE10_5 = 'I452' || CIE10_6 = 'I452' || CIE10_7 = 'I452' || CIE10_8 = 'I452' || CIE10_9 = 'I452' || CIE10_10 = 'I452') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I453($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I453' || CIE10_2 = 'I453' || CIE10_3 = 'I453' || CIE10_4 = 'I453' || CIE10_5 = 'I453' || CIE10_6 = 'I453' || CIE10_7 = 'I453' || CIE10_8 = 'I453' || CIE10_9 = 'I453' || CIE10_10 = 'I453') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I454($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I454' || CIE10_2 = 'I454' || CIE10_3 = 'I454' || CIE10_4 = 'I454' || CIE10_5 = 'I454' || CIE10_6 = 'I454' || CIE10_7 = 'I454' || CIE10_8 = 'I454' || CIE10_9 = 'I454' || CIE10_10 = 'I454') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I455($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I455' || CIE10_2 = 'I455' || CIE10_3 = 'I455' || CIE10_4 = 'I455' || CIE10_5 = 'I455' || CIE10_6 = 'I455' || CIE10_7 = 'I455' || CIE10_8 = 'I455' || CIE10_9 = 'I455' || CIE10_10 = 'I455') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I456($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I456' || CIE10_2 = 'I456' || CIE10_3 = 'I456' || CIE10_4 = 'I456' || CIE10_5 = 'I456' || CIE10_6 = 'I456' || CIE10_7 = 'I456' || CIE10_8 = 'I456' || CIE10_9 = 'I456' || CIE10_10 = 'I456') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I458($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I458' || CIE10_2 = 'I458' || CIE10_3 = 'I458' || CIE10_4 = 'I458' || CIE10_5 = 'I458' || CIE10_6 = 'I458' || CIE10_7 = 'I458' || CIE10_8 = 'I458' || CIE10_9 = 'I458' || CIE10_10 = 'I458') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I459($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I459' || CIE10_2 = 'I459' || CIE10_3 = 'I459' || CIE10_4 = 'I459' || CIE10_5 = 'I459' || CIE10_6 = 'I459' || CIE10_7 = 'I459' || CIE10_8 = 'I459' || CIE10_9 = 'I459' || CIE10_10 = 'I459') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I460($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I460' || CIE10_2 = 'I460' || CIE10_3 = 'I460' || CIE10_4 = 'I460' || CIE10_5 = 'I460' || CIE10_6 = 'I460' || CIE10_7 = 'I460' || CIE10_8 = 'I460' || CIE10_9 = 'I460' || CIE10_10 = 'I460') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I461($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I461' || CIE10_2 = 'I461' || CIE10_3 = 'I461' || CIE10_4 = 'I461' || CIE10_5 = 'I461' || CIE10_6 = 'I461' || CIE10_7 = 'I461' || CIE10_8 = 'I461' || CIE10_9 = 'I461' || CIE10_10 = 'I461') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I469($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I469' || CIE10_2 = 'I469' || CIE10_3 = 'I469' || CIE10_4 = 'I469' || CIE10_5 = 'I469' || CIE10_6 = 'I469' || CIE10_7 = 'I469' || CIE10_8 = 'I469' || CIE10_9 = 'I469' || CIE10_10 = 'I469') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I470($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I470' || CIE10_2 = 'I470' || CIE10_3 = 'I470' || CIE10_4 = 'I470' || CIE10_5 = 'I470' || CIE10_6 = 'I470' || CIE10_7 = 'I470' || CIE10_8 = 'I470' || CIE10_9 = 'I470' || CIE10_10 = 'I470') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I471($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I471' || CIE10_2 = 'I471' || CIE10_3 = 'I471' || CIE10_4 = 'I471' || CIE10_5 = 'I471' || CIE10_6 = 'I471' || CIE10_7 = 'I471' || CIE10_8 = 'I471' || CIE10_9 = 'I471' || CIE10_10 = 'I471') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I472($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I472' || CIE10_2 = 'I472' || CIE10_3 = 'I472' || CIE10_4 = 'I472' || CIE10_5 = 'I472' || CIE10_6 = 'I472' || CIE10_7 = 'I472' || CIE10_8 = 'I472' || CIE10_9 = 'I472' || CIE10_10 = 'I472') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I479($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I479' || CIE10_2 = 'I479' || CIE10_3 = 'I3479' || CIE10_4 = 'I479' || CIE10_5 = 'I479' || CIE10_6 = 'I479' || CIE10_7 = 'I479' || CIE10_8 = 'I3479' || CIE10_9 = 'I479' || CIE10_10 = 'I479') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I480($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I480' || CIE10_2 = 'I480' || CIE10_3 = 'I480' || CIE10_4 = 'I480' || CIE10_5 = 'I480' || CIE10_6 = 'I480' || CIE10_7 = 'I480' || CIE10_8 = 'I480' || CIE10_9 = 'I480' || CIE10_10 = 'I480') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I481($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I481' || CIE10_2 = 'I481' || CIE10_3 = 'I481' || CIE10_4 = 'I481' || CIE10_5 = 'I481' || CIE10_6 = 'I481' || CIE10_7 = 'I481' || CIE10_8 = 'I481' || CIE10_9 = 'I481' || CIE10_10 = 'I481') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I482($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I482' || CIE10_2 = 'I482' || CIE10_3 = 'I482' || CIE10_4 = 'I482' || CIE10_5 = 'I482' || CIE10_6 = 'I482' || CIE10_7 = 'I482' || CIE10_8 = 'I482' || CIE10_9 = 'I482' || CIE10_10 = 'I482') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I483($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I483' || CIE10_2 = 'I483' || CIE10_3 = 'I483' || CIE10_4 = 'I483' || CIE10_5 = 'I483' || CIE10_6 = 'I483' || CIE10_7 = 'I483' || CIE10_8 = 'I483' || CIE10_9 = 'I483' || CIE10_10 = 'I483') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I484($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I484' || CIE10_2 = 'I484' || CIE10_3 = 'I484' || CIE10_4 = 'I484' || CIE10_5 = 'I484' || CIE10_6 = 'I484' || CIE10_7 = 'I484' || CIE10_8 = 'I484' || CIE10_9 = 'I484' || CIE10_10 = 'I484') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I489($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I489' || CIE10_2 = 'I489' || CIE10_3 = 'I489' || CIE10_4 = 'I489' || CIE10_5 = 'I489' || CIE10_6 = 'I489' || CIE10_7 = 'I489' || CIE10_8 = 'I489' || CIE10_9 = 'I489' || CIE10_10 = 'I489') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I490($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I490' || CIE10_2 = 'I490' || CIE10_3 = 'I490' || CIE10_4 = 'I490' || CIE10_5 = 'I490' || CIE10_6 = 'I490' || CIE10_7 = 'I490' || CIE10_8 = 'I490' || CIE10_9 = 'I490' || CIE10_10 = 'I490') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I491($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I491' || CIE10_2 = 'I491' || CIE10_3 = 'I491' || CIE10_4 = 'I491' || CIE10_5 = 'I491' || CIE10_6 = 'I491' || CIE10_7 = 'I491' || CIE10_8 = 'I491' || CIE10_9 = 'I491' || CIE10_10 = 'I491') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I492($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I492' || CIE10_2 = 'I492' || CIE10_3 = 'I492' || CIE10_4 = 'I492' || CIE10_5 = 'I492' || CIE10_6 = 'I492' || CIE10_7 = 'I492' || CIE10_8 = 'I492' || CIE10_9 = 'I492' || CIE10_10 = 'I492') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I493($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I493' || CIE10_2 = 'I493' || CIE10_3 = 'I493' || CIE10_4 = 'I493' || CIE10_5 = 'I493' || CIE10_6 = 'I493' || CIE10_7 = 'I493' || CIE10_8 = 'I493' || CIE10_9 = 'I493' || CIE10_10 = 'I493') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I494($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I3494' || CIE10_2 = 'I494' || CIE10_3 = 'I494' || CIE10_4 = 'I494' || CIE10_5 = 'I494' || CIE10_6 = 'I3494' || CIE10_7 = 'I494' || CIE10_8 = 'I494' || CIE10_9 = 'I494' || CIE10_10 = 'I494') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I495($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I495' || CIE10_2 = 'I495' || CIE10_3 = 'I495' || CIE10_4 = 'I495' || CIE10_5 = 'I495' || CIE10_6 = 'I495' || CIE10_7 = 'I495' || CIE10_8 = 'I495' || CIE10_9 = 'I495' || CIE10_10 = 'I495') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I498($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I498' || CIE10_2 = 'I498' || CIE10_3 = 'I498' || CIE10_4 = 'I498' || CIE10_5 = 'I498' || CIE10_6 = 'I498' || CIE10_7 = 'I498' || CIE10_8 = 'I498' || CIE10_9 = 'I498' || CIE10_10 = 'I498') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I499($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I499' || CIE10_2 = 'I499' || CIE10_3 = 'I499' || CIE10_4 = 'I499' || CIE10_5 = 'I499' || CIE10_6 = 'I499' || CIE10_7 = 'I499' || CIE10_8 = 'I499' || CIE10_9 = 'I499' || CIE10_10 = 'I499') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I500($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I500' || CIE10_2 = 'I500' || CIE10_3 = 'I500' || CIE10_4 = 'I500' || CIE10_5 = 'I500' || CIE10_6 = 'I500' || CIE10_7 = 'I500' || CIE10_8 = 'I500' || CIE10_9 = 'I500' || CIE10_10 = 'I500') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I501($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I501' || CIE10_2 = 'I501' || CIE10_3 = 'I501' || CIE10_4 = 'I501' || CIE10_5 = 'I501' || CIE10_6 = 'I501' || CIE10_7 = 'I501' || CIE10_8 = 'I501' || CIE10_9 = 'I501' || CIE10_10 = 'I501') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I509($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I509' || CIE10_2 = 'I509' || CIE10_3 = 'I509' || CIE10_4 = 'I509' || CIE10_5 = 'I509' || CIE10_6 = 'I509' || CIE10_7 = 'I509' || CIE10_8 = 'I509' || CIE10_9 = 'I509' || CIE10_10 = 'I509') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I510($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I510' || CIE10_2 = 'I510' || CIE10_3 = 'I510' || CIE10_4 = 'I510' || CIE10_5 = 'I510' || CIE10_6 = 'I510' || CIE10_7 = 'I510' || CIE10_8 = 'I510' || CIE10_9 = 'I510' || CIE10_10 = 'I510') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I511($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I511' || CIE10_2 = 'I511' || CIE10_3 = 'I511' || CIE10_4 = 'I511' || CIE10_5 = 'I511' || CIE10_6 = 'I511' || CIE10_7 = 'I511' || CIE10_8 = 'I511' || CIE10_9 = 'I511' || CIE10_10 = 'I511') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I512($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I512' || CIE10_2 = 'I512' || CIE10_3 = 'I512' || CIE10_4 = 'I512' || CIE10_5 = 'I512' || CIE10_6 = 'I512' || CIE10_7 = 'I512' || CIE10_8 = 'I512' || CIE10_9 = 'I512' || CIE10_10 = 'I512') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I513($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I513' || CIE10_2 = 'I513' || CIE10_3 = 'I513' || CIE10_4 = 'I513' || CIE10_5 = 'I513' || CIE10_6 = 'I513' || CIE10_7 = 'I513' || CIE10_8 = 'I513' || CIE10_9 = 'I513' || CIE10_10 = 'I513' ) && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I514($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I514' || CIE10_2 = 'I514' || CIE10_3 = 'I514' || CIE10_4 = 'I514' || CIE10_5 = 'I514' || CIE10_6 = 'I514' || CIE10_7 = 'I514' || CIE10_8 = 'I514' || CIE10_9 = 'I514' || CIE10_10 = 'I514') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I515($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I515' || CIE10_2 = 'I515' || CIE10_3 = 'I515' || CIE10_4 = 'I515' || CIE10_5 = 'I515' || CIE10_6 = 'I515' || CIE10_7 = 'I515' || CIE10_8 = 'I515' || CIE10_9 = 'I515' || CIE10_10 = 'I515') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I516($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I516' || CIE10_2 = 'I516' || CIE10_3 = 'I516' || CIE10_4 = 'I516' || CIE10_5 = 'I516' || CIE10_6 = 'I516' || CIE10_7 = 'I516' || CIE10_8 = 'I516' || CIE10_9 = 'I516' || CIE10_10 = 'I516') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I517($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I517' || CIE10_2 = 'I517' || CIE10_3 = 'I517' || CIE10_4 = 'I517' || CIE10_5 = 'I517' || CIE10_6 = 'I517' || CIE10_7 = 'I517' || CIE10_8 = 'I517' || CIE10_9 = 'I517' || CIE10_10 = 'I517') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I518($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I518' || CIE10_2 = 'I518' || CIE10_3 = 'I518' || CIE10_4 = 'I518' || CIE10_5 = 'I518' || CIE10_6 = 'I518' || CIE10_7 = 'I518' || CIE10_8 = 'I518' || CIE10_9 = 'I518' || CIE10_10 = 'I518') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I519($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I519' || CIE10_2 = 'I519' || CIE10_3 = 'I519' || CIE10_4 = 'I519' || CIE10_5 = 'I519' || CIE10_6 = 'I519' || CIE10_7 = 'I519' || CIE10_8 = 'I519' || CIE10_9 = 'I519' || CIE10_10 = 'I519') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I520($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I520' || CIE10_2 = 'I520' || CIE10_3 = 'I520' || CIE10_4 = 'I520' || CIE10_5 = 'I520' || CIE10_6 = 'I520' || CIE10_7 = 'I520' || CIE10_8 = 'I520' || CIE10_9 = 'I520' || CIE10_10 = 'I520') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I521($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I521' || CIE10_2 = 'I521' || CIE10_3 = 'I521' || CIE10_4 = 'I521' || CIE10_5 = 'I521' || CIE10_6 = 'I521' || CIE10_7 = 'I521' || CIE10_8 = 'I521' || CIE10_9 = 'I521' || CIE10_10 = 'I521') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I528($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I528' || CIE10_2 = 'I528' || CIE10_3 = 'I528' || CIE10_4 = 'I528' || CIE10_5 = 'I528' || CIE10_6 = 'I528' || CIE10_7 = 'I528' || CIE10_8 = 'I528' || CIE10_9 = 'I528' || CIE10_10 = 'I528') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+ 
+public static function I600($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I600' || CIE10_2 = 'I600' || CIE10_3 = 'I600' || CIE10_4 = 'I600' || CIE10_5 = 'I600' || CIE10_6 = 'I600' || CIE10_7 = 'I600' || CIE10_8 = 'I600' || CIE10_9 = 'I600' || CIE10_10 = 'I600') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I601($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I601' || CIE10_2 = 'I601' || CIE10_3 = 'I601' || CIE10_4 = 'I601' || CIE10_5 = 'I601' || CIE10_6 = 'I601' || CIE10_7 = 'I601' || CIE10_8 = 'I601' || CIE10_9 = 'I601' || CIE10_10 = 'I601') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I602($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I602' || CIE10_2 = 'I602' || CIE10_3 = 'I602' || CIE10_4 = 'I602' || CIE10_5 = 'I602' || CIE10_6 = 'I602' || CIE10_7 = 'I602' || CIE10_8 = 'I602' || CIE10_9 = 'I602' || CIE10_10 = 'I602') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I603($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I603' || CIE10_2 = 'I603' || CIE10_3 = 'I603' || CIE10_4 = 'I603' || CIE10_5 = 'I603' || CIE10_6 = 'I603' || CIE10_7 = 'I603' || CIE10_8 = 'I603' || CIE10_9 = 'I603' || CIE10_10 = 'I603') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I604($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I604' || CIE10_2 = 'I604' || CIE10_3 = 'I604' || CIE10_4 = 'I604' || CIE10_5 = 'I604' || CIE10_6 = 'I604' || CIE10_7 = 'I604' || CIE10_8 = 'I604' || CIE10_9 = 'I604' || CIE10_10 = 'I604') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I605($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I605' || CIE10_2 = 'I605' || CIE10_3 = 'I605' || CIE10_4 = 'I605' || CIE10_5 = 'I605' || CIE10_6 = 'I605' || CIE10_7 = 'I605' || CIE10_8 = 'I605' || CIE10_9 = 'I605' || CIE10_10 = 'I605') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I606($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I606' || CIE10_2 = 'I606' || CIE10_3 = 'I606' || CIE10_4 = 'I606' || CIE10_5 = 'I606' || CIE10_6 = 'I606' || CIE10_7 = 'I606' || CIE10_8 = 'I606' || CIE10_9 = 'I606' || CIE10_10 = 'I606') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I607($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I607' || CIE10_2 = 'I607' || CIE10_3 = 'I607' || CIE10_4 = 'I607' || CIE10_5 = 'I607' || CIE10_6 = 'I607' || CIE10_7 = 'I607' || CIE10_8 = 'I607' || CIE10_9 = 'I607' || CIE10_10 = 'I607') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I608($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I608' || CIE10_2 = 'I608' || CIE10_3 = 'I608' || CIE10_4 = 'I608' || CIE10_5 = 'I608' || CIE10_6 = 'I608' || CIE10_7 = 'I608' || CIE10_8 = 'I608' || CIE10_9 = 'I608' || CIE10_10 = 'I608') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I609($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I609' || CIE10_2 = 'I609' || CIE10_3 = 'I609' || CIE10_4 = 'I609' || CIE10_5 = 'I609' || CIE10_6 = 'I609' || CIE10_7 = 'I609' || CIE10_8 = 'I609' || CIE10_9 = 'I609' || CIE10_10 = 'I609') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I610($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I610' || CIE10_2 = 'I610' || CIE10_3 = 'I610' || CIE10_4 = 'I610' || CIE10_5 = 'I610' || CIE10_6 = 'I610' || CIE10_7 = 'I610' || CIE10_8 = 'I610' || CIE10_9 = 'I610' || CIE10_10 = 'I610') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I611($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I611' || CIE10_2 = 'I611' || CIE10_3 = 'I611' || CIE10_4 = 'I611' || CIE10_5 = 'I611' || CIE10_6 = 'I611' || CIE10_7 = 'I611' || CIE10_8 = 'I611' || CIE10_9 = 'I611' || CIE10_10 = 'I611') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I612($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I612' || CIE10_2 = 'I612' || CIE10_3 = 'I612' || CIE10_4 = 'I612' || CIE10_5 = 'I612' || CIE10_6 = 'I612' || CIE10_7 = 'I612' || CIE10_8 = 'I612' || CIE10_9 = 'I612' || CIE10_10 = 'I612') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+
+public static function I613($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I613' || CIE10_2 = 'I613' || CIE10_3 = 'I613' || CIE10_4 = 'I613' || CIE10_5 = 'I613' || CIE10_6 = 'I613' || CIE10_7 = 'I613' || CIE10_8 = 'I613' || CIE10_9 = 'I613' || CIE10_10 = 'I613') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I614($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I614' || CIE10_2 = 'I614' || CIE10_3 = 'I614' || CIE10_4 = 'I614' || CIE10_5 = 'I614' || CIE10_6 = 'I614' || CIE10_7 = 'I614' || CIE10_8 = 'I614' || CIE10_9 = 'I614' || CIE10_10 = 'I614') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I615($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I615' || CIE10_2 = 'I615' || CIE10_3 = 'I615' || CIE10_4 = 'I615' || CIE10_5 = 'I615' || CIE10_6 = 'I615' || CIE10_7 = 'I615' || CIE10_8 = 'I615' || CIE10_9 = 'I615' || CIE10_10 = 'I615') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I616($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I616' || CIE10_2 = 'I616' || CIE10_3 = 'I616' || CIE10_4 = 'I616' || CIE10_5 = 'I616' ||  CIE10_6 = 'I616' || CIE10_7 = 'I616' || CIE10_8 = 'I616' || CIE10_9 = 'I616' || CIE10_10 = 'I616') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+
+public static function I618($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I618' || CIE10_2 = 'I618' || CIE10_3 = 'I618' || CIE10_4 = 'I618' || CIE10_5 = 'I618' || CIE10_6 = 'I618' || CIE10_7 = 'I618' || CIE10_8 = 'I618' || CIE10_9 = 'I618' || CIE10_10 = 'I618') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I619($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I619' || CIE10_2 = 'I619' || CIE10_3 = 'I619' || CIE10_4 = 'I619' || CIE10_5 = 'I619' || CIE10_6 = 'I619' || CIE10_7 = 'I619' || CIE10_8 = 'I619' || CIE10_9 = 'I619' || CIE10_10 = 'I619') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I620($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I620' || CIE10_2 = 'I620' || CIE10_3 = 'I620' || CIE10_4 = 'I620' || CIE10_5 = 'I620' || CIE10_6 = 'I620' || CIE10_7 = 'I620' || CIE10_8 = 'I620' || CIE10_9 = 'I620' || CIE10_10 = 'I620') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I621($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I621' || CIE10_2 = 'I621' || CIE10_3 = 'I621' || CIE10_4 = 'I621' || CIE10_5 = 'I621' || CIE10_6 = 'I621' || CIE10_7 = 'I621' || CIE10_8 = 'I621' || CIE10_9 = 'I621' || CIE10_10 = 'I621') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I629($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I629' || CIE10_2 = 'I629' || CIE10_3 = 'I629' || CIE10_4 = 'I629' || CIE10_5 = 'I629' || CIE10_6 = 'I629' || CIE10_7 = 'I629' || CIE10_8 = 'I629' || CIE10_9 = 'I629' || CIE10_10 = 'I629') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I630($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I630' || CIE10_2 = 'I630' || CIE10_3 = 'I630' || CIE10_4 = 'I630' || CIE10_5 = 'I630' || CIE10_6 = 'I630' || CIE10_7 = 'I630' || CIE10_8 = 'I630' || CIE10_9 = 'I630' || CIE10_10 = 'I630') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I631($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I631' || CIE10_2 = 'I631' || CIE10_3 = 'I631' || CIE10_4 = 'I631' || CIE10_5 = 'I631' || CIE10_6 = 'I631' || CIE10_7 = 'I631' || CIE10_8 = 'I631' || CIE10_9 = 'I631' || CIE10_10 = 'I631') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I632($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I632' || CIE10_2 = 'I632' || CIE10_3 = 'I632' || CIE10_4 = 'I632' || CIE10_5 = 'I632' || CIE10_6 = 'I632' || CIE10_7 = 'I632' || CIE10_8 = 'I632' || CIE10_9 = 'I632' || CIE10_10 = 'I632') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I633($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I633' || CIE10_2 = 'I633' || CIE10_3 = 'I633' || CIE10_4 = 'I633' || CIE10_5 = 'I633' || CIE10_6 = 'I633' || CIE10_7 = 'I633' || CIE10_8 = 'I633' || CIE10_9 = 'I633' || CIE10_10 = 'I633') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I634($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I634' || CIE10_2 = 'I634' || CIE10_3 = 'I634' || CIE10_4 = 'I634' || CIE10_5 = 'I634' || CIE10_6 = 'I634' || CIE10_7 = 'I634' || CIE10_8 = 'I634' || CIE10_9 = 'I634' || CIE10_10 = 'I634') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I635($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I635' || CIE10_2 = 'I635' || CIE10_3 = 'I635' || CIE10_4 = 'I635' || CIE10_5 = 'I635' || CIE10_6 = 'I635' || CIE10_7 = 'I635' || CIE10_8 = 'I635' || CIE10_9 = 'I635' || CIE10_10 = 'I635') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I636($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I636' || CIE10_2 = 'I636' || CIE10_3 = 'I636' || CIE10_4 = 'I636' || CIE10_5 = 'I636' || CIE10_6 = 'I636' || CIE10_7 = 'I636' || CIE10_8 = 'I636' || CIE10_9 = 'I636' || CIE10_10 = 'I636') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I638($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I638' || CIE10_2 = 'I638' || CIE10_3 = 'I638' || CIE10_4 = 'I638' || CIE10_5 = '638' || CIE10_6 = 'I638' || CIE10_7 = 'I638' || CIE10_8 = 'I638' || CIE10_9 = 'I638' || CIE10_10 = '638') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I639($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I639' || CIE10_2 = 'I639' || CIE10_3 = 'I639' || CIE10_4 = 'I639' || CIE10_5 = 'I639' || CIE10_6 = 'I639' || CIE10_7 = 'I639' || CIE10_8 = 'I639' || CIE10_9 = 'I639' || CIE10_10 = 'I639') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I64X($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I64X' || CIE10_2 = 'I64X' || CIE10_3 = '64X' || CIE10_4 = 'I64X' || CIE10_5 = 'I64X' || CIE10_6 = 'I64X' || CIE10_7 = 'I64X' || CIE10_8 = '64X' || CIE10_9 = 'I64X' || CIE10_10 = 'I64X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I650($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I650' || CIE10_2 = 'I650' || CIE10_3 = 'I650' || CIE10_4 = 'I650' || CIE10_5 = 'I650' || CIE10_6 = 'I650' || CIE10_7 = 'I650' || CIE10_8 = 'I650' || CIE10_9 = 'I650' || CIE10_10 = 'I650') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I651($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I651' || CIE10_2 = 'I651' || CIE10_3 = 'I651' || CIE10_4 = 'I651' || CIE10_5 = 'I651' || CIE10_6 = 'I651' || CIE10_7 = 'I651' || CIE10_8 = 'I651' || CIE10_9 = 'I651' || CIE10_10 = 'I651') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I652($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I652' || CIE10_2 = 'I652' || CIE10_3 = 'I652' || CIE10_4 = 'I652' || CIE10_5 = 'I652' || CIE10_6 = 'I652' || CIE10_7 = 'I652' || CIE10_8 = 'I652' || CIE10_9 = 'I652' || CIE10_10 = 'I652') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I653($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I653' || CIE10_2 = 'I653' || CIE10_3 = 'I653' || CIE10_4 = 'I653' || CIE10_5 = 'I653' || CIE10_6 = 'I653' || CIE10_7 = 'I653' || CIE10_8 = 'I653' || CIE10_9 = 'I653' || CIE10_10 = 'I653') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I658($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I658' || CIE10_2 = 'I658' || CIE10_3 = 'I658' || CIE10_4 = 'I658' || CIE10_5 = 'I658' || CIE10_6 = 'I658' || CIE10_7 = 'I658' || CIE10_8 = 'I658' || CIE10_9 = 'I658' || CIE10_10 = 'I658') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I659($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I659' || CIE10_2 = 'I659' || CIE10_3 = 'I659' || CIE10_4 = 'I659' || CIE10_5 = 'I659' || CIE10_6 = 'I659' || CIE10_7 = 'I659' || CIE10_8 = 'I659' || CIE10_9 = 'I659' || CIE10_10 = 'I659') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I660($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I660' || CIE10_2 = 'I660' || CIE10_3 = 'I660' || CIE10_4 = 'I660' || CIE10_5 = 'I660' || CIE10_6 = 'I660' || CIE10_7 = 'I660' || CIE10_8 = 'I660' || CIE10_9 = 'I660' || CIE10_10 = 'I660') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I661($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I661' || CIE10_2 = 'I661' || CIE10_3 = '661' || CIE10_4 = 'I661' || CIE10_5 = 'I661' || CIE10_6 = 'I661' || CIE10_7 = 'I661' || CIE10_8 = '661' || CIE10_9 = 'I661' || CIE10_10 = 'I661') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I662($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I662' || CIE10_2 = 'I662' || CIE10_3 = 'I662' || CIE10_4 = 'I662' || CIE10_5 = 'I662' || CIE10_6 = 'I662' || CIE10_7 = 'I662' || CIE10_8 = 'I662' || CIE10_9 = 'I662' || CIE10_10 = 'I662') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I663($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I663' || CIE10_2 = 'I663' || CIE10_3 = 'I663' || CIE10_4 = 'I663' || CIE10_5 = 'I663' || CIE10_6 = 'I663' || CIE10_7 = 'I663' || CIE10_8 = 'I663' || CIE10_9 = 'I663' || CIE10_10 = 'I663') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+
+public static function I664($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I664' || CIE10_2 = 'I664' || CIE10_3 = 'I664' || CIE10_4 = 'I664' || CIE10_5 = 'I664' || CIE10_6 = 'I664' || CIE10_7 = 'I664' || CIE10_8 = 'I664' || CIE10_9 = 'I664' || CIE10_10 = 'I664') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I668($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I668' || CIE10_2 = 'I668' || CIE10_3 = 'I668' || CIE10_4 = 'I668' || CIE10_5 = 'I668' || CIE10_6 = 'I668' || CIE10_7 = 'I668' || CIE10_8 = 'I668' || CIE10_9 = 'I668' || CIE10_10 = 'I668') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    } 
+public static function I669($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I669' || CIE10_2 = 'I669' || CIE10_3 = 'I669' || CIE10_4 = 'I669' || CIE10_5 = 'I669' || CIE10_6 = 'I669' || CIE10_7 = 'I669' || CIE10_8 = 'I669' || CIE10_9 = 'I669' || CIE10_10 = 'I669') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }    
+public static function I670($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I670' || CIE10_2 = 'I670' || CIE10_3 = 'I670' || CIE10_4 = 'I670' || CIE10_5 = 'I670' || CIE10_6 = 'I670' || CIE10_7 = 'I670' || CIE10_8 = 'I670' || CIE10_9 = 'I670' || CIE10_10 = 'I670') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I671($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I671' || CIE10_2 = 'I671' || CIE10_3 = 'I671' || CIE10_4 = 'I671' || CIE10_5 = 'I671' || CIE10_6 = 'I671' || CIE10_7 = 'I671' || CIE10_8 = 'I671' || CIE10_9 = 'I671' || CIE10_10 = 'I671') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I672($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I672' || CIE10_2 = 'I672' || CIE10_3 = 'I672' || CIE10_4 = 'I672' || CIE10_5 = 'I672' || CIE10_6 = 'I672' || CIE10_7 = 'I672' || CIE10_8 = 'I672' || CIE10_9 = 'I672' || CIE10_10 = 'I672') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I673($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I673' || CIE10_2 = 'I673' || CIE10_3 = 'I673' || CIE10_4 = 'I673' || CIE10_5 = 'I673' || CIE10_6 = 'I673' || CIE10_7 = 'I673' || CIE10_8 = 'I673' || CIE10_9 = 'I673' || CIE10_10 = 'I673') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I674($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I674' || CIE10_2 = 'I674' || CIE10_3 = 'I674' || CIE10_4 = 'I674' || CIE10_5 = 'I674' || CIE10_6 = 'I674' || CIE10_7 = 'I674' || CIE10_8 = 'I674' || CIE10_9 = 'I674' || CIE10_10 = 'I674') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }    
+public static function I675($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I675' || CIE10_2 = 'I675' || CIE10_3 = 'I675' || CIE10_4 = 'I675' || CIE10_5 = 'I675' || CIE10_6 = 'I675' || CIE10_7 = 'I675' || CIE10_8 = 'I675' || CIE10_9 = 'I675' || CIE10_10 = 'I675') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I676($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I676' || CIE10_2 = 'I676' || CIE10_3 = 'I676' || CIE10_4 = 'I676' || CIE10_5 = 'I676' || CIE10_6 = 'I676' || CIE10_7 = 'I676' || CIE10_8 = 'I676' || CIE10_9 = 'I676' || CIE10_10 = 'I676') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I677($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I677' || CIE10_2 = 'I677' || CIE10_3 = 'I677' || CIE10_4 = 'I677' || CIE10_5 = 'I677' || CIE10_6 = 'I677' || CIE10_7 = 'I677' || CIE10_8 = 'I677' || CIE10_9 = 'I677' || CIE10_10 = 'I677') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I678($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I678' || CIE10_2 = 'I678' || CIE10_3 = 'I678' || CIE10_4 = 'I678' || CIE10_5 = 'I678' || CIE10_6 = 'I678' || CIE10_7 = 'I678' || CIE10_8 = 'I678' || CIE10_9 = 'I678' || CIE10_10 = 'I678') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I679($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I679' || CIE10_2 = 'I679' || CIE10_3 = 'I679' || CIE10_4 = 'I679' || CIE10_5 = 'I679' || CIE10_6 = 'I679' || CIE10_7 = 'I679' || CIE10_8 = 'I679' || CIE10_9 = 'I679' || CIE10_10 = 'I679') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I680($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I680' || CIE10_2 = 'I680' || CIE10_3 = 'I680' || CIE10_4 = 'I680' || CIE10_5 = 'I680' || CIE10_6 = 'I680' || CIE10_7 = 'I680' || CIE10_8 = 'I680' || CIE10_9 = 'I680' || CIE10_10 = 'I680') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I681($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I681' || CIE10_2 = 'I681' || CIE10_3 = 'I681' || CIE10_4 = 'I681' || CIE10_5 = 'I681' || CIE10_6 = 'I681' || CIE10_7 = 'I681' || CIE10_8 = 'I681' || CIE10_9 = 'I681' || CIE10_10 = 'I681') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I682($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I682' || CIE10_2 = 'I682' || CIE10_3 = 'I682' || CIE10_4 = 'I682' || CIE10_5 = 'I682' || CIE10_6 = 'I682' || CIE10_7 = 'I682' || CIE10_8 = 'I682' || CIE10_9 = 'I682' || CIE10_10 = 'I682') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I688($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I688' || CIE10_2 = 'I688' || CIE10_3 = 'I688' || CIE10_4 = 'I688' || CIE10_5 = 'I688' || CIE10_6 = 'I688' || CIE10_7 = 'I688' || CIE10_8 = 'I688' || CIE10_9 = 'I688' || CIE10_10 = 'I688') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I690($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I690' || CIE10_2 = 'I690' || CIE10_3 = 'I690' || CIE10_4 = 'I690' || CIE10_5 = 'I690' || CIE10_6 = 'I690' || CIE10_7 = 'I690' || CIE10_8 = 'I690' || CIE10_9 = 'I690' || CIE10_10 = 'I690') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I691($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I691' || CIE10_2 = 'I691' || CIE10_3 = 'I691' || CIE10_4 = 'I691' || CIE10_5 = 'I691' || CIE10_6 = 'I691' || CIE10_7 = 'I691' || CIE10_8 = 'I691' || CIE10_9 = 'I691' || CIE10_10 = 'I691') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I692($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I692' || CIE10_2 = 'I692' || CIE10_3 = 'I692' || CIE10_4 = 'I692' || CIE10_5 = 'I692' || CIE10_6 = 'I692' || CIE10_7 = 'I692' || CIE10_8 = 'I692' || CIE10_9 = 'I692' || CIE10_10 = 'I692') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I693($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I693' || CIE10_2 = 'I693' || CIE10_3 = 'I693' || CIE10_4 = 'I693' || CIE10_5 = 'I693' || CIE10_6 = 'I693' || CIE10_7 = 'I693' || CIE10_8 = 'I693' || CIE10_9 = 'I693' || CIE10_10 = 'I693') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I694($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I694' || CIE10_2 = 'I694' || CIE10_3 = 'I694' || CIE10_4 = 'I694' || CIE10_5 = 'I694' || CIE10_6 = 'I694' || CIE10_7 = 'I694' || CIE10_8 = 'I694' || CIE10_9 = 'I694' || CIE10_10 = 'I694') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I698($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I698' || CIE10_2 = 'I698' || CIE10_3 = 'I698' || CIE10_4 = 'I698' || CIE10_5 = 'I698' || CIE10_6 = 'I698' || CIE10_7 = 'I698' || CIE10_8 = 'I698' || CIE10_9 = 'I698' || CIE10_10 = 'I698') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }    
+public static function I700($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I700' || CIE10_2 = 'I700' || CIE10_3 = 'I700' || CIE10_4 = 'I700' || CIE10_5 = 'I700' || CIE10_6 = 'I700' || CIE10_7 = 'I700' || CIE10_8 = 'I700' || CIE10_9 = 'I700' || CIE10_10 = 'I700') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I701($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I701' || CIE10_2 = 'I701' || CIE10_3 = 'I701' || CIE10_4 = 'I701' || CIE10_5 = 'I701' || CIE10_6 = 'I701' || CIE10_7 = 'I701' || CIE10_8 = 'I701' || CIE10_9 = 'I701' || CIE10_10 = 'I701') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I702($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I702' || CIE10_2 = 'I702' || CIE10_3 = 'I702' || CIE10_4 = 'I702' || CIE10_5 = 'I702' || CIE10_6 = 'I702' || CIE10_7 = 'I702' || CIE10_8 = 'I702' || CIE10_9 = 'I702' || CIE10_10 = 'I702') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I708($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I708' || CIE10_2 = 'I708' || CIE10_3 = 'I708' || CIE10_4 = 'I708' || CIE10_5 = 'I708' || CIE10_6 = 'I708' || CIE10_7 = 'I708' || CIE10_8 = 'I708' || CIE10_9 = 'I708' || CIE10_10 = 'I708') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I709($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I709' || CIE10_2 = 'I709' || CIE10_3 = 'I709' || CIE10_4 = 'I709' || CIE10_5 = 'I709' || CIE10_6 = 'I709' || CIE10_7 = 'I709' || CIE10_8 = 'I709' || CIE10_9 = 'I709' || CIE10_10 = 'I709') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I710($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I710' || CIE10_2 = 'I710' || CIE10_3 = 'I710' || CIE10_4 = 'I710' || CIE10_5 = 'I710' || CIE10_6 = 'I710' || CIE10_7 = 'I710' || CIE10_8 = 'I710' || CIE10_9 = 'I710' || CIE10_10 = 'I710') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I711($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I711' || CIE10_2 = 'I711' || CIE10_3 = 'I711' || CIE10_4 = 'I711' || CIE10_5 = 'I711' || CIE10_6 = 'I711' || CIE10_7 = 'I711' || CIE10_8 = 'I711' || CIE10_9 = 'I711' || CIE10_10 = 'I711') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I712($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I712' || CIE10_2 = 'I712' || CIE10_3 = 'I712' || CIE10_4 = 'I712' || CIE10_5 = 'I712' || CIE10_6 = 'I712' || CIE10_7 = 'I712' || CIE10_8 = 'I712' || CIE10_9 = 'I712' || CIE10_10 = 'I712') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I713($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I713' || CIE10_2 = 'I713' || CIE10_3 = 'I713' || CIE10_4 = 'I713' || CIE10_5 = 'I713' || CIE10_6 = 'I713' || CIE10_7 = 'I713' || CIE10_8 = 'I713' || CIE10_9 = 'I713' || CIE10_10 = 'I713') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I714($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I714' || CIE10_2 = 'I714' || CIE10_3 = 'I714' || CIE10_4 = 'I714' || CIE10_5 = 'I714' || CIE10_6 = 'I714' || CIE10_7 = 'I714' || CIE10_8 = 'I714' || CIE10_9 = 'I714' || CIE10_10 = 'I714') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I715($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I715' || CIE10_2 = 'I715' || CIE10_3 = 'I715' || CIE10_4 = 'I715' || CIE10_5 = 'I715' || CIE10_6 = 'I715' || CIE10_7 = 'I715' || CIE10_8 = 'I715' || CIE10_9 = 'I715' || CIE10_10 = 'I715') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I716($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I716' || CIE10_2 = 'I716' || CIE10_3 = 'I716' || CIE10_4 = 'I716' || CIE10_5 = 'I716' || CIE10_6 = 'I716' || CIE10_7 = 'I716' || CIE10_8 = 'I716' || CIE10_9 = 'I716' || CIE10_10 = 'I716') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I718($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I718' || CIE10_2 = 'I718' || CIE10_3 = 'I718' || CIE10_4 = 'I718' || CIE10_5 = 'I718' || CIE10_6 = 'I718' || CIE10_7 = 'I718' || CIE10_8 = 'I718' || CIE10_9 = 'I718' || CIE10_10 = 'I718') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I719($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I719' || CIE10_2 = 'I719' || CIE10_3 = 'I719' || CIE10_4 = 'I719' || CIE10_5 = 'I719' || CIE10_6 = 'I719' || CIE10_7 = 'I719' || CIE10_8 = 'I719' || CIE10_9 = 'I719' || CIE10_10 = 'I719') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I720($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I720' || CIE10_2 = 'I720' || CIE10_3 = 'I720' || CIE10_4 = 'I720' || CIE10_5 = 'I720' || CIE10_6 = 'I720' || CIE10_7 = 'I720' || CIE10_8 = 'I720' || CIE10_9 = 'I720' || CIE10_10 = 'I720') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I721($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I721' || CIE10_2 = 'I721' || CIE10_3 = 'I721' || CIE10_4 = 'I721' || CIE10_5 = 'I721' || CIE10_6 = 'I721' || CIE10_7 = 'I721' || CIE10_8 = 'I721' || CIE10_9 = 'I721' || CIE10_10 = 'I721') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I722($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I722' || CIE10_2 = 'I722' || CIE10_3 = 'I722' || CIE10_4 = 'I722' || CIE10_5 = 'I722' || CIE10_6 = 'I722' || CIE10_7 = 'I722' || CIE10_8 = 'I722' || CIE10_9 = 'I722' || CIE10_10 = 'I722') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I723($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I723' || CIE10_2 = 'I723' || CIE10_3 = 'I723' || CIE10_4 = 'I723' || CIE10_5 = 'I723' || CIE10_6 = 'I723' || CIE10_7 = 'I723' || CIE10_8 = 'I723' || CIE10_9 = 'I723' || CIE10_10 = 'I723') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I724($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I724' || CIE10_2 = 'I724' || CIE10_3 = 'I724' || CIE10_4 = 'I724' || CIE10_5 = 'I724' || CIE10_6 = 'I724' || CIE10_7 = 'I724' || CIE10_8 = 'I724' || CIE10_9 = 'I724' || CIE10_10 = 'I724') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I725($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I725' || CIE10_2 = 'I725' || CIE10_3 = 'I725' || CIE10_4 = 'I725' || CIE10_5 = 'I725' || CIE10_6 = 'I725' || CIE10_7 = 'I725' || CIE10_8 = 'I725' || CIE10_9 = 'I725' || CIE10_10 = 'I725') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I726($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I726' || CIE10_2 = 'I726' || CIE10_3 = 'I726' || CIE10_4 = 'I726' || CIE10_5 = 'I726' || CIE10_6 = 'I726' || CIE10_7 = 'I726' || CIE10_8 = 'I726' || CIE10_9 = 'I726' || CIE10_10 = 'I726') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I728($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I728' || CIE10_2 = 'I728' || CIE10_3 = 'I728' || CIE10_4 = 'I728' || CIE10_5 = 'I728' || CIE10_6 = 'I728' || CIE10_7 = 'I728' || CIE10_8 = 'I728' || CIE10_9 = 'I728' || CIE10_10 = 'I728') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I729($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I729' || CIE10_2 = 'I729' || CIE10_3 = 'I729' || CIE10_4 = 'I729' || CIE10_5 = 'I729' || CIE10_6 = 'I729' || CIE10_7 = 'I729' || CIE10_8 = 'I729' || CIE10_9 = 'I729' || CIE10_10 = 'I729') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I730($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I730' || CIE10_2 = 'I730' || CIE10_3 = 'I730' || CIE10_4 = 'I730' || CIE10_5 = 'I730' || CIE10_6 = 'I730' || CIE10_7 = 'I730' || CIE10_8 = 'I730' || CIE10_9 = 'I730' || CIE10_10 = 'I730') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I731($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I731' || CIE10_2 = 'I731' || CIE10_3 = 'I731' || CIE10_4 = 'I731' || CIE10_5 = 'I731' || CIE10_6 = 'I731' || CIE10_7 = 'I731' || CIE10_8 = 'I731' || CIE10_9 = 'I731' || CIE10_10 = 'I731') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I738($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I738' || CIE10_2 = 'I738' || CIE10_3 = 'I738' || CIE10_4 = 'I738' || CIE10_5 = 'I738' || CIE10_6 = 'I738' || CIE10_7 = 'I738' || CIE10_8 = 'I738' || CIE10_9 = 'I738' || CIE10_10 = 'I738') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I739($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I739' || CIE10_2 = 'I739' || CIE10_3 = 'I739' || CIE10_4 = 'I739' || CIE10_5 = 'I739' || CIE10_6 = 'I739' || CIE10_7 = 'I739' || CIE10_8 = 'I739' || CIE10_9 = 'I739' || CIE10_10 = 'I739') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I740($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I740' || CIE10_2 = 'I740' || CIE10_3 = 'I740' || CIE10_4 = 'I740' || CIE10_5 = 'I740' || CIE10_6 = 'I740' || CIE10_7 = 'I740' || CIE10_8 = 'I740' || CIE10_9 = 'I740' || CIE10_10 = 'I740') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I741($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I741' || CIE10_2 = 'I741' || CIE10_3 = 'I741' || CIE10_4 = 'I741' || CIE10_5 = 'I741' || CIE10_6 = 'I741' || CIE10_7 = 'I741' || CIE10_8 = 'I741' || CIE10_9 = 'I741' || CIE10_10 = 'I741') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I742($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I742' || CIE10_2 = 'I742' || CIE10_3 = 'I742' || CIE10_4 = 'I742' || CIE10_5 = 'I742' || CIE10_6 = 'I742' || CIE10_7 = 'I742' || CIE10_8 = 'I742' || CIE10_9 = 'I742' || CIE10_10 = 'I742') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I743($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I743' || CIE10_2 = 'I743' || CIE10_3 = 'I743' || CIE10_4 = 'I743' || CIE10_5 = 'I743' || CIE10_6 = 'I743' || CIE10_7 = 'I743' || CIE10_8 = 'I743' || CIE10_9 = 'I743' || CIE10_10 = 'I743') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I744($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I744' || CIE10_2 = 'I744' || CIE10_3 = 'I744' || CIE10_4 = 'I744' || CIE10_5 = 'I744' || CIE10_6 = 'I744' || CIE10_7 = 'I744' || CIE10_8 = 'I744' || CIE10_9 = 'I744' || CIE10_10 = 'I744') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I745($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I745' || CIE10_2 = 'I745' || CIE10_3 = 'I745' || CIE10_4 = 'I745' || CIE10_5 = 'I745' || CIE10_6 = 'I745' || CIE10_7 = 'I745' || CIE10_8 = 'I745' || CIE10_9 = 'I745' || CIE10_10 = 'I745') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I748($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I748' || CIE10_2 = 'I748' || CIE10_3 = 'I748' || CIE10_4 = 'I748' || CIE10_5 = 'I748' || CIE10_6 = 'I748' || CIE10_7 = 'I748' || CIE10_8 = 'I748' || CIE10_9 = 'I748' || CIE10_10 = 'I748') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I749($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I749' || CIE10_2 = 'I749' || CIE10_3 = 'I749' || CIE10_4 = 'I749' || CIE10_5 = 'I749' || CIE10_6 = 'I749' || CIE10_7 = 'I749' || CIE10_8 = 'I749' || CIE10_9 = 'I749' || CIE10_10 = 'I749') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I770($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I770' || CIE10_2 = 'I770' || CIE10_3 = 'I770' || CIE10_4 = 'I770' || CIE10_5 = 'I770' || CIE10_6 = 'I770' || CIE10_7 = 'I770' || CIE10_8 = 'I770' || CIE10_9 = 'I770' || CIE10_10 = 'I770') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I771($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I771' || CIE10_2 = 'I771' || CIE10_3 = 'I771' || CIE10_4 = 'I771' || CIE10_5 = 'I771' || CIE10_6 = 'I771' || CIE10_7 = 'I771' || CIE10_8 = 'I771' || CIE10_9 = 'I771' || CIE10_10 = 'I771') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I772($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I772' || CIE10_2 = 'I772' || CIE10_3 = 'I772' || CIE10_4 = 'I772' || CIE10_5 = 'I772' || CIE10_6 = 'I772' || CIE10_7 = 'I772' || CIE10_8 = 'I772' || CIE10_9 = 'I772' || CIE10_10 = 'I772') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I773($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I773' || CIE10_2 = 'I773' || CIE10_3 = 'I773' || CIE10_4 = 'I773' || CIE10_5 = 'I773' || CIE10_6 = 'I773' || CIE10_7 = 'I773' || CIE10_8 = 'I773' || CIE10_9 = 'I773' || CIE10_10 = 'I773') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I774($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I774' || CIE10_2 = 'I774' || CIE10_3 = 'I774' || CIE10_4 = 'I774' || CIE10_5 = 'I774' || CIE10_6 = 'I774' || CIE10_7 = 'I774' || CIE10_8 = 'I774' || CIE10_9 = 'I774' || CIE10_10 = 'I774') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I775($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I775' || CIE10_2 = 'I775' || CIE10_3 = 'I775' || CIE10_4 = 'I775' || CIE10_5 = 'I775' || CIE10_6 = 'I775' || CIE10_7 = 'I775' || CIE10_8 = 'I775' || CIE10_9 = 'I775' || CIE10_10 = 'I775') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I776($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I776' || CIE10_2 = 'I776' || CIE10_3 = 'I776' || CIE10_4 = 'I776' || CIE10_5 = 'I776' || CIE10_6 = 'I776' || CIE10_7 = 'I776' || CIE10_8 = 'I776' || CIE10_9 = 'I776' || CIE10_10 = 'I776') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I778($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I778' || CIE10_2 = 'I778' || CIE10_3 = 'I778' || CIE10_4 = 'I778' || CIE10_5 = 'I778' || CIE10_6 = 'I778' || CIE10_7 = 'I778' || CIE10_8 = 'I778' || CIE10_9 = 'I778' || CIE10_10 = 'I778') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I779($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I779' || CIE10_2 = 'I779' || CIE10_3 = 'I779' || CIE10_4 = 'I779' || CIE10_5 = 'I779' || CIE10_6 = 'I779' || CIE10_7 = 'I779' || CIE10_8 = 'I779' || CIE10_9 = 'I779' || CIE10_10 = 'I779') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I780($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I780' || CIE10_2 = 'I780' || CIE10_3 = 'I780' || CIE10_4 = 'I780' || CIE10_5 = 'I780' || CIE10_6 = 'I780' || CIE10_7 = 'I780' || CIE10_8 = 'I780' || CIE10_9 = 'I780' || CIE10_10 = 'I780') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I781($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I781' || CIE10_2 = 'I781' || CIE10_3 = 'I781' || CIE10_4 = 'I781' || CIE10_5 = 'I781' || CIE10_6 = 'I781' || CIE10_7 = 'I781' || CIE10_8 = 'I781' || CIE10_9 = 'I781' || CIE10_10 = 'I781') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I788($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I788' || CIE10_2 = 'I788' || CIE10_3 = 'I788' || CIE10_4 = 'I788' || CIE10_5 = 'I788' || CIE10_6 = 'I788' || CIE10_7 = 'I788' || CIE10_8 = 'I788' || CIE10_9 = 'I788' || CIE10_10 = 'I788') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I789($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I789' || CIE10_2 = 'I789' || CIE10_3 = 'I789' || CIE10_4 = 'I789' || CIE10_5 = 'I789' || CIE10_6 = 'I789' || CIE10_7 = 'I789' || CIE10_8 = 'I789' || CIE10_9 = 'I789' || CIE10_10 = 'I789') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I790($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I790' || CIE10_2 = 'I790' || CIE10_3 = 'I790' || CIE10_4 = 'I790' || CIE10_5 = 'I790' || CIE10_6 = 'I790' || CIE10_7 = 'I790' || CIE10_8 = 'I790' || CIE10_9 = 'I790' || CIE10_10 = 'I790') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I791($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I791' || CIE10_2 = 'I791' || CIE10_3 = 'I791' || CIE10_4 = 'I791' || CIE10_5 = 'I791' || CIE10_6 = 'I791' || CIE10_7 = 'I791' || CIE10_8 = 'I791' || CIE10_9 = 'I791' || CIE10_10 = 'I791') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I792($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I792' || CIE10_2 = 'I792' || CIE10_3 = 'I792' || CIE10_4 = 'I792' || CIE10_5 = 'I792' || CIE10_6 = 'I792' || CIE10_7 = 'I792' || CIE10_8 = 'I792' || CIE10_9 = 'I792' || CIE10_10 = 'I792') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I798($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I798' || CIE10_2 = 'I798' || CIE10_3 = 'I798' || CIE10_4 = 'I798' || CIE10_5 = 'I798' || CIE10_6 = 'I798' || CIE10_7 = 'I798' || CIE10_8 = 'I798' || CIE10_9 = 'I798' || CIE10_10 = 'I798') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }    
+public static function I800($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I800' || CIE10_2 = 'I800' || CIE10_3 = 'I800' || CIE10_4 = 'I800' || CIE10_5 = 'I800' || CIE10_6 = 'I800' || CIE10_7 = 'I800' || CIE10_8 = 'I800' || CIE10_9 = 'I800' || CIE10_10 = 'I800') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I801($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I801' || CIE10_2 = 'I801' || CIE10_3 = 'I801' || CIE10_4 = 'I801' || CIE10_5 = 'I801' || CIE10_6 = 'I801' || CIE10_7 = 'I801' || CIE10_8 = 'I801' || CIE10_9 = 'I801' || CIE10_10 = 'I801') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I802($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I802' || CIE10_2 = 'I802' || CIE10_3 = 'I802' || CIE10_4 = 'I802' || CIE10_5 = 'I802' || CIE10_6 = 'I802' || CIE10_7 = 'I802' || CIE10_8 = 'I802' || CIE10_9 = 'I802' || CIE10_10 = 'I802') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I803($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I803' || CIE10_2 = 'I803' || CIE10_3 = 'I803' || CIE10_4 = 'I803' || CIE10_5 = 'I803' || CIE10_6 = 'I803' || CIE10_7 = 'I803' || CIE10_8 = 'I803' || CIE10_9 = 'I803' || CIE10_10 = 'I803') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I808($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I808' || CIE10_2 = 'I808' || CIE10_3 = 'I808' || CIE10_4 = 'I808' || CIE10_5 = 'I808' || CIE10_6 = 'I808' || CIE10_7 = 'I808' || CIE10_8 = 'I808' || CIE10_9 = 'I808' || CIE10_10 = 'I808') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I809($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I809' || CIE10_2 = 'I809' || CIE10_3 = 'I809' || CIE10_4 = 'I809' || CIE10_5 = 'I809' || CIE10_6 = 'I809' || CIE10_7 = 'I809' || CIE10_8 = 'I809' || CIE10_9 = 'I809' || CIE10_10 = 'I809') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I81X($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I81X' || CIE10_2 = 'I81X' || CIE10_3 = 'I81X' || CIE10_4 = 'I81X' || CIE10_5 = 'I81X' || CIE10_6 = 'I81X' || CIE10_7 = 'I81X' || CIE10_8 = 'I81X' || CIE10_9 = 'I81X' || CIE10_10 = 'I81X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I820($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I820' || CIE10_2 = 'I820' || CIE10_3 = 'I820' || CIE10_4 = 'I820' || CIE10_5 = 'I820' || CIE10_6 = 'I820' || CIE10_7 = 'I820' || CIE10_8 = 'I820' || CIE10_9 = 'I820' || CIE10_10 = 'I820') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I821($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I821' || CIE10_2 = 'I821' || CIE10_3 = 'I821' || CIE10_4 = 'I821' || CIE10_5 = 'I821' || CIE10_6 = 'I821' || CIE10_7 = 'I821' || CIE10_8 = 'I821' || CIE10_9 = 'I821' || CIE10_10 = 'I821') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I822($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I822' || CIE10_2 = 'I822' || CIE10_3 = 'I822' || CIE10_4 = 'I822' || CIE10_5 = 'I822' || CIE10_6 = 'I822' || CIE10_7 = 'I822' || CIE10_8 = 'I822' || CIE10_9 = 'I822' || CIE10_10 = 'I822') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I823($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+                    $sentencia = $conexion->prepare($sql);
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I823' || CIE10_2 = 'I823' || CIE10_3 = 'I823' || CIE10_4 = 'I823' || CIE10_5 = 'I823' || CIE10_6 = 'I823' || CIE10_7 = 'I823' || CIE10_8 = 'I823' || CIE10_9 = 'I823' || CIE10_10 = 'I823') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I828($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I828' || CIE10_2 = 'I828' || CIE10_3 = 'I828' || CIE10_4 = 'I828' || CIE10_5 = 'I828' || CIE10_6 = 'I828' || CIE10_7 = 'I828' || CIE10_8 = 'I828' || CIE10_9 = 'I828' || CIE10_10 = 'I828') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I829($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I829' || CIE10_2 = 'I829' || CIE10_3 = 'I829' || CIE10_4 = 'I829' || CIE10_5 = 'I829' || CIE10_6 = 'I829' || CIE10_7 = 'I829' || CIE10_8 = 'I829' || CIE10_9 = 'I829' || CIE10_10 = 'I829') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I830($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I830' || CIE10_2 = 'I830' || CIE10_3 = 'I830' || CIE10_4 = 'I830' || CIE10_5 = 'I830' || CIE10_6 = 'I830' || CIE10_7 = 'I830' || CIE10_8 = 'I830' || CIE10_9 = 'I830' || CIE10_10 = 'I830') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I831($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I831' || CIE10_2 = 'I831' || CIE10_3 = 'I831' || CIE10_4 = 'I831' || CIE10_5 = 'I831' || CIE10_6 = 'I831' || CIE10_7 = 'I831' || CIE10_8 = 'I831' || CIE10_9 = 'I831' || CIE10_10 = 'I831') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I832($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I832' || CIE10_2 = 'I832' || CIE10_3 = 'I832' || CIE10_4 = 'I832' || CIE10_5 = 'I832' || CIE10_6 = 'I832' || CIE10_7 = 'I832' || CIE10_8 = 'I832' || CIE10_9 = 'I832' || CIE10_10 = 'I832') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I839($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I839' || CIE10_2 = 'I839' || CIE10_3 = 'I839' || CIE10_4 = 'I839' || CIE10_5 = 'I839' || CIE10_6 = 'I839' || CIE10_7 = 'I839' || CIE10_8 = 'I839' || CIE10_9 = 'I839' || CIE10_10 = 'I839') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I850($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I850' || CIE10_2 = 'I850' || CIE10_3 = 'I850' || CIE10_4 = 'I850' || CIE10_5 = 'I850' || CIE10_6 = 'I850' || CIE10_7 = 'I850' || CIE10_8 = 'I850' || CIE10_9 = 'I850' || CIE10_10 = 'I850') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I859($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I859' || CIE10_2 = 'I859' || CIE10_3 = 'I859' || CIE10_4 = 'I859' || CIE10_5 = 'I859' || CIE10_6 = 'I859' || CIE10_7 = 'I859' || CIE10_8 = 'I859' || CIE10_9 = 'I859' || CIE10_10 = 'I859') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I860($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I860' || CIE10_2 = 'I860' || CIE10_3 = 'I860' || CIE10_4 = 'I860' || CIE10_5 = 'I860' || CIE10_6 = 'I860' || CIE10_7 = 'I860' || CIE10_8 = 'I860' || CIE10_9 = 'I860' || CIE10_10 = 'I860') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I861($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I861' || CIE10_2 = 'I861' || CIE10_3 = 'I861' || CIE10_4 = 'I861' || CIE10_5 = 'I861' || CIE10_6 = 'I861' || CIE10_7 = 'I861' || CIE10_8 = 'I861' || CIE10_9 = 'I861' || CIE10_10 = 'I861') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I862($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I862' || CIE10_2 = 'I862' || CIE10_3 = 'I862' || CIE10_4 = 'I862' || CIE10_5 = 'I862' ||  CIE10_6 = 'I862' || CIE10_7 = 'I862' || CIE10_8 = 'I862' || CIE10_9 = 'I862' || CIE10_10 = 'I862') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I863($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I863' || CIE10_2 = 'I863' || CIE10_3 = 'I863' || CIE10_4 = 'I863' || CIE10_5 = 'I863' || CIE10_6 = 'I863' || CIE10_7 = 'I863' || CIE10_8 = 'I863' || CIE10_9 = 'I863' || CIE10_10 = 'I863') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I864($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I864' || CIE10_2 = 'I864' || CIE10_3 = 'I864' || CIE10_4 = 'I864' || CIE10_5 = 'I864' || CIE10_6 = 'I864' || CIE10_7 = 'I864' || CIE10_8 = 'I864' || CIE10_9 = 'I864' || CIE10_10 = 'I864') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I868($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I868' || CIE10_2 = 'I868' || CIE10_3 = 'I868' || CIE10_4 = 'I868' || CIE10_5 = 'I868' || CIE10_6 = 'I868' || CIE10_7 = 'I868' || CIE10_8 = 'I868' || CIE10_9 = 'I868' || CIE10_10 = 'I868') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I870($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I870' || CIE10_2 = 'I870' || CIE10_3 = 'I870' || CIE10_4 = 'I870' || CIE10_5 = 'I870' || CIE10_6 = 'I870' || CIE10_7 = 'I870' || CIE10_8 = 'I870' || CIE10_9 = 'I870' || CIE10_10 = 'I870') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I871($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I871' || CIE10_2 = 'I871' || CIE10_3 = 'I871' || CIE10_4 = 'I871' || CIE10_5 = 'I871' || CIE10_6 = 'I871' || CIE10_7 = 'I871' || CIE10_8 = 'I871' || CIE10_9 = 'I871' || CIE10_10 = 'I871') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I872($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I872' || CIE10_2 = 'I872' || CIE10_3 = 'I872' || CIE10_4 = 'I872' || CIE10_5 = 'I872' || CIE10_6 = 'I872' || CIE10_7 = 'I872' || CIE10_8 = 'I872' || CIE10_9 = 'I872' || CIE10_10 = 'I872') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I878($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I878' || CIE10_2 = 'I878' || CIE10_3 = 'I878' || CIE10_4 = 'I878' || CIE10_5 = 'I878' || CIE10_6 = 'I878' || CIE10_7 = 'I878' || CIE10_8 = 'I878' || CIE10_9 = 'I878' || CIE10_10 = 'I878') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I879($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I879' || CIE10_2 = 'I879' || CIE10_3 = 'I879' || CIE10_4 = 'I879' || CIE10_5 = 'I879' || CIE10_6 = 'I879' || CIE10_7 = 'I879' || CIE10_8 = 'I879' || CIE10_9 = 'I879' || CIE10_10 = 'I879') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I880($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I880' || CIE10_2 = 'I880' || CIE10_3 = 'I880' || CIE10_4 = 'I880' || CIE10_5 = 'I880' || CIE10_6 = 'I880' || CIE10_7 = 'I880' || CIE10_8 = 'I880' || CIE10_9 = 'I880' || CIE10_10 = 'I880') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I881($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I881' || CIE10_2 = 'I881' || CIE10_3 = 'I881' || CIE10_4 = 'I881' || CIE10_5 = 'I881' || CIE10_6 = 'I881' || CIE10_7 = 'I881' || CIE10_8 = 'I881' || CIE10_9 = 'I881' || CIE10_10 = 'I881') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I888($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I888' || CIE10_2 = 'I888' || CIE10_3 = 'I888' || CIE10_4 = 'I888' || CIE10_5 = 'I888' || CIE10_6 = 'I888' || CIE10_7 = 'I888' || CIE10_8 = 'I888' || CIE10_9 = 'I888' || CIE10_10 = 'I888') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I889($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I889' || CIE10_2 = 'I889' || CIE10_3 = 'I889' || CIE10_4 = 'I889' || CIE10_5 = 'I889' || CIE10_6 = 'I889' || CIE10_7 = 'I889' || CIE10_8 = 'I889' || CIE10_9 = 'I889' || CIE10_10 = 'I889') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I890($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I890' || CIE10_2 = 'I890' || CIE10_3 = 'I890' || CIE10_4 = 'I890' || CIE10_5 = 'I890' || CIE10_6 = 'I890' || CIE10_7 = 'I890' || CIE10_8 = 'I890' || CIE10_9 = 'I890' || CIE10_10 = 'I890') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I891($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I891' || CIE10_2 = 'I891' || CIE10_3 = 'I891' || CIE10_4 = 'I891' || CIE10_5 = 'I891' || CIE10_6 = 'I891' || CIE10_7 = 'I891' || CIE10_8 = 'I891' || CIE10_9 = 'I891' || CIE10_10 = 'I891') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I898($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I898' || CIE10_2 = 'I898' || CIE10_3 = 'I898' || CIE10_4 = 'I898' || CIE10_5 = 'I898' || CIE10_6 = 'I898' || CIE10_7 = 'I898' || CIE10_8 = 'I898' || CIE10_9 = 'I898' || CIE10_10 = 'I898') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I899($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I899' || CIE10_2 = 'I899' || CIE10_3 = 'I899' || CIE10_4 = 'I899' || CIE10_5 = 'I899' || CIE10_6 = 'I899' || CIE10_7 = 'I899' || CIE10_8 = 'I899' || CIE10_9 = 'I899' || CIE10_10 = 'I899') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }    
+public static function I950($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I950' || CIE10_2 = 'I950' || CIE10_3 = 'I950' || CIE10_4 = 'I8950' || CIE10_5 = 'I950' || CIE10_6 = 'I950' || CIE10_7 = 'I950' || CIE10_8 = 'I950' || CIE10_9 = 'I8950' || CIE10_10 = 'I950') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I951($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I951' || CIE10_2 = 'I951' || CIE10_3 = 'I951' || CIE10_4 = 'I951' || CIE10_5 = 'I951' || CIE10_6 = 'I951' || CIE10_7 = 'I951' || CIE10_8 = 'I951' || CIE10_9 = 'I951' || CIE10_10 = 'I951') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I952($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I952' || CIE10_2 = 'I952' || CIE10_3 = 'I952' || CIE10_4 = 'I952' || CIE10_5 = 'I952' || CIE10_6 = 'I952' || CIE10_7 = 'I952' || CIE10_8 = 'I952' || CIE10_9 = 'I952' || CIE10_10 = 'I952') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I958($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I958' || CIE10_2 = 'I958' || CIE10_3 = 'I958' || CIE10_4 = 'I958' || CIE10_5 = 'I958' || CIE10_6 = 'I958' || CIE10_7 = 'I958' || CIE10_8 = 'I958' || CIE10_9 = 'I958' || CIE10_10 = 'I958') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I959($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I959' || CIE10_2 = 'I959' || CIE10_3 = 'I959' || CIE10_4 = 'I959' || CIE10_5 = 'I959' || CIE10_6 = 'I959' || CIE10_7 = 'I959' || CIE10_8 = 'I959' || CIE10_9 = 'I959' || CIE10_10 = 'I959') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I970($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I970' || CIE10_2 = 'I970' || CIE10_3 = 'I970' || CIE10_4 = 'I970' || CIE10_5 = 'I970') && Certificado = '$Razon'";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I971($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I971' || CIE10_2 = 'I971' || CIE10_3 = 'I971' || CIE10_4 = 'I971' || CIE10_5 = 'I971' || CIE10_6 = 'I971' || CIE10_7 = 'I971' || CIE10_8 = 'I971' || CIE10_9 = 'I971' || CIE10_10 = 'I971') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I972($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I972' || CIE10_2 = 'I972' || CIE10_3 = 'I972' || CIE10_4 = 'I972' || CIE10_5 = 'I972' || CIE10_6 = 'I972' || CIE10_7 = 'I972' || CIE10_8 = 'I972' || CIE10_9 = 'I972' || CIE10_10 = 'I972') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I978($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I978' || CIE10_2 = 'I978' || CIE10_3 = 'I978' || CIE10_4 = 'I978' || CIE10_5 = 'I978' || CIE10_6 = 'I978' || CIE10_7 = 'I978' || CIE10_8 = 'I978' || CIE10_9 = 'I978' || CIE10_10 = 'I978') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I979($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I979' || CIE10_2 = 'I979' || CIE10_3 = 'I979' || CIE10_4 = 'I979' || CIE10_5 = 'I979' || CIE10_6 = 'I979' || CIE10_7 = 'I979' || CIE10_8 = 'I979' || CIE10_9 = 'I979' || CIE10_10 = 'I979') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I980($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I980' || CIE10_2 = 'I980' || CIE10_3 = 'I980' || CIE10_4 = 'I980' || CIE10_5 = 'I980' || CIE10_6 = 'I980' || CIE10_7 = 'I980' || CIE10_8 = 'I980' || CIE10_9 = 'I980' || CIE10_10 = 'I980') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I981($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I981' || CIE10_2 = 'I981' || CIE10_3 = 'I981' || CIE10_4 = 'I981' || CIE10_5 = 'I981' || CIE10_6 = 'I981' || CIE10_7 = 'I981' || CIE10_8 = 'I981' || CIE10_9 = 'I981' || CIE10_10 = 'I981') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I982($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+                    $sentencia = $conexion->prepare($sql);
+                    $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I982' || CIE10_2 = 'I982' || CIE10_3 = 'I982' || CIE10_4 = 'I982' || CIE10_5 = 'I982' || CIE10_6 = 'I982' || CIE10_7 = 'I982' || CIE10_8 = 'I982' || CIE10_9 = 'I982' || CIE10_10 = 'I982' ) && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I983($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I983' || CIE10_2 = 'I983' || CIE10_3 = 'I983' || CIE10_4 = 'I983' || CIE10_5 = 'I983' || CIE10_6 = 'I983' || CIE10_7 = 'I983' || CIE10_8 = 'I983' || CIE10_9 = 'I983' || CIE10_10 = 'I983') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I988($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I988' || CIE10_2 = 'I988' || CIE10_3 = 'I988' || CIE10_4 = 'I988' || CIE10_5 = 'I988' || CIE10_6 = 'I988' || CIE10_7 = 'I988' || CIE10_8 = 'I988' || CIE10_9 = 'I988' || CIE10_10 = 'I988') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+public static function I99X($conexion) {
+        
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I99X' || CIE10_2 = 'I99X' || CIE10_3 = 'I99X' || CIE10_4 = 'I99X' || CIE10_5 = 'I99X' || CIE10_6 = 'I99X' || CIE10_7 = 'I99X' || CIE10_8 = 'I99X' || CIE10_9 = 'I99X' || CIE10_10 = 'I99X') && Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];
+       
+        }
+        return $total_usuarios;
+    }
+      public static function I00($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I00' || CIE10_2 = 'I00' || CIE10_3 = 'I00' || CIE10_4 = 'I00' || CIE10_5 = 'I00' || CIE10_6 = 'I00' || CIE10_7 = 'I00' || CIE10_8 = 'I00' || CIE10_9 = 'I00' || CIE10_10 = 'I00') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I01($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I01' || CIE10_2 = 'I01' || CIE10_3 = 'I01' || CIE10_4 = 'I01' || CIE10_5 = 'I01' || CIE10_6 = 'I01' || CIE10_7 = 'I01' || CIE10_8 = 'I01' || CIE10_9 = 'I01' || CIE10_10 = 'I01') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I02($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I02' || CIE10_2 = 'I02' || CIE10_3 = 'I02' || CIE10_4 = 'I02' || CIE10_5 = 'I02' || CIE10_6 = 'I02' || CIE10_7 = 'I02' || CIE10_8 = 'I02' || CIE10_9 = 'I02' || CIE10_10 = 'I02') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I05($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I05' || CIE10_2 = 'I05' || CIE10_3 = 'I05' || CIE10_4 = 'I05' || CIE10_5 = 'I05' || CIE10_6 = 'I05' || CIE10_7 = 'I05' || CIE10_8 = 'I05' || CIE10_9 = 'I05' || CIE10_10 = 'I05') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I06($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I06' || CIE10_2 = 'I06' || CIE10_3 = 'I06' || CIE10_4 = 'I06' || CIE10_5 = 'I06' || CIE10_6 = 'I06' || CIE10_7 = 'I06' || CIE10_8 = 'I06' || CIE10_9 = 'I06' || CIE10_10 = 'I06') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I07($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I07' || CIE10_2 = 'I07' || CIE10_3 = 'I07' || CIE10_4 = 'I07' || CIE10_5 = 'I07' || CIE10_6 = 'I07' || CIE10_7 = 'I07' || CIE10_8 = 'I07' || CIE10_9 = 'I07' || CIE10_10 = 'I07') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I08($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I08' || CIE10_2 = 'I08' || CIE10_3 = 'I08' || CIE10_4 = 'I08' || CIE10_5 = 'I08' || CIE10_6 = 'I08' || CIE10_7 = 'I08' || CIE10_8 = 'I08' || CIE10_9 = 'I08' || CIE10_10 = 'I08') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I09($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I09' || CIE10_2 = 'I09' || CIE10_3 = 'I09' || CIE10_4 = 'I09' || CIE10_5 = 'I09'|| CIE10_6 = 'I09' || CIE10_7 = 'I09' || CIE10_8 = 'I09' || CIE10_9 = 'I09' || CIE10_10 = 'I09') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I10($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I10' || CIE10_2 = 'I10' || CIE10_3 = 'I10' || CIE10_4 = 'I10' || CIE10_5 = 'I10' || CIE10_6 = 'I10' || CIE10_7 = 'I10' || CIE10_8 = 'I10' || CIE10_9 = 'I10' || CIE10_10 = 'I10') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I11($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I11' || CIE10_2 = 'I11' || CIE10_3 = 'I11' || CIE10_4 = 'I11' || CIE10_5 = 'I11' || CIE10_6 = 'I11' || CIE10_7 = 'I11' || CIE10_8 = 'I11' || CIE10_9 = 'I11' || CIE10_10 = 'I11') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I12($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I12' || CIE10_2 = 'I12' || CIE10_3 = 'I12' || CIE10_4 = 'I12' || CIE10_5 = 'I12' || CIE10_6 = 'I12' || CIE10_7 = 'I12' || CIE10_8 = 'I12' || CIE10_9 = 'I12' || CIE10_10 = 'I12') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I13($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I13' || CIE10_2 = 'I13' || CIE10_3 = 'I13' || CIE10_4 = 'I13' || CIE10_5 = 'I13' || CIE10_6 = 'I13' || CIE10_7 = 'I13' || CIE10_8 = 'I13' || CIE10_9 = 'I13' || CIE10_10 = 'I13') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I15($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I15' || CIE10_2 = 'I15' || CIE10_3 = 'I15' || CIE10_4 = 'I15' || CIE10_5 = 'I15' || CIE10_6 = 'I15' || CIE10_7 = 'I15' || CIE10_8 = 'I15' || CIE10_9 = 'I15' || CIE10_10 = 'I15') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I20($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I20' || CIE10_2 = 'I20' || CIE10_3 = 'I20' || CIE10_4 = 'I20' || CIE10_5 = 'I20' || CIE10_6 = 'I20' || CIE10_7 = 'I20' || CIE10_8 = 'I20' || CIE10_9 = 'I20' || CIE10_10 = 'I20') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+      public static function I21($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I21' || CIE10_2 = 'I21' || CIE10_3 = 'I21' || CIE10_4 = 'I21' || CIE10_5 = 'I21' || CIE10_6 = 'I21' || CIE10_7 = 'I21' || CIE10_8 = 'I21' || CIE10_9 = 'I21' || CIE10_10 = 'I21') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I22($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I22' || CIE10_2 = 'I22' || CIE10_3 = 'I22' || CIE10_4 = 'I22' || CIE10_5 = 'I22' || CIE10_6 = 'I22' || CIE10_7 = 'I22' || CIE10_8 = 'I22' || CIE10_9 = 'I22' || CIE10_10 = 'I22') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I23($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I23' || CIE10_2 = 'I23' || CIE10_3 = 'I23' || CIE10_4 = 'I23' || CIE10_5 = 'I23' || CIE10_6 = 'I23' || CIE10_7 = 'I23' || CIE10_8 = 'I23' || CIE10_9 = 'I23' || CIE10_10 = 'I23') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I24($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I24' || CIE10_2 = 'I24' || CIE10_3 = 'I24' || CIE10_4 = 'I24' || CIE10_5 = 'I24' || CIE10_6 = 'I24' || CIE10_7 = 'I24' || CIE10_8 = 'I24' || CIE10_9 = 'I24' || CIE10_10 = 'I24') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I25($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I25' || CIE10_2 = 'I25' || CIE10_3 = 'I25' || CIE10_4 = 'I25' || CIE10_5 = 'I25' || CIE10_6 = 'I25' || CIE10_7 = 'I25' || CIE10_8 = 'I25' || CIE10_9 = 'I25' || CIE10_10 = 'I25') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I26($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I26' || CIE10_2 = 'I26' || CIE10_3 = 'I26' || CIE10_4 = 'I26' || CIE10_5 = 'I26' || CIE10_6 = 'I26' || CIE10_7 = 'I26' || CIE10_8 = 'I26' || CIE10_9 = 'I26' || CIE10_10 = 'I26') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I27($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I27' || CIE10_2 = 'I27' || CIE10_3 = 'I27' || CIE10_4 = 'I27' || CIE10_5 = 'I27' || CIE10_6 = 'I27' || CIE10_7 = 'I27' || CIE10_8 = 'I27' || CIE10_9 = 'I27' || CIE10_10 = 'I27') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I28($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I28' || CIE10_2 = 'I28' || CIE10_3 = 'I28' || CIE10_4 = 'I28' || CIE10_5 = 'I28' || CIE10_6 = 'I28' || CIE10_7 = 'I28' || CIE10_8 = 'I28' || CIE10_9 = 'I28' || CIE10_10 = 'I28') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I30($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I30' || CIE10_2 = 'I30' || CIE10_3 = 'I30' || CIE10_4 = 'I30' || CIE10_5 = 'I30' || CIE10_6 = 'I30' || CIE10_7 = 'I30' || CIE10_8 = 'I30' || CIE10_9 = 'I30' || CIE10_10 = 'I30') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I31($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I31' || CIE10_2 = 'I31' || CIE10_3 = 'I31' || CIE10_4 = 'I31' || CIE10_5 = 'I31' || CIE10_6 = 'I31' || CIE10_7 = 'I31' || CIE10_8 = 'I31' || CIE10_9 = 'I31' || CIE10_10 = 'I31') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I32($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I32' || CIE10_2 = 'I32' || CIE10_3 = 'I32' || CIE10_4 = 'I32' || CIE10_5 = 'I32' || CIE10_6 = 'I32' || CIE10_7 = 'I32' || CIE10_8 = 'I32' || CIE10_9 = 'I32' || CIE10_10 = 'I32') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I33($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I33' || CIE10_2 = 'I33' || CIE10_3 = 'I33' || CIE10_4 = 'I33' || CIE10_5 = 'I33' || CIE10_6 = 'I33' || CIE10_7 = 'I33' || CIE10_8 = 'I33' || CIE10_9 = 'I33' || CIE10_10 = 'I33') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I34($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I34' || CIE10_2 = 'I34' || CIE10_3 = 'I34' || CIE10_4 = 'I34' || CIE10_5 = 'I34' || CIE10_6 = 'I34' || CIE10_7 = 'I34' || CIE10_8 = 'I34' || CIE10_9 = 'I34' || CIE10_10 = 'I34') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I35($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I35' || CIE10_2 = 'I35' || CIE10_3 = 'I35' || CIE10_4 = 'I35' || CIE10_5 = 'I35' || CIE10_6 = 'I35' || CIE10_7 = 'I35' || CIE10_8 = 'I35' || CIE10_9 = 'I35' || CIE10_10 = 'I35') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I36($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I36' || CIE10_2 = 'I36' || CIE10_3 = 'I36' || CIE10_4 = 'I36' || CIE10_5 = 'I36' || CIE10_6 = 'I36' || CIE10_7 = 'I36' || CIE10_8 = 'I36' || CIE10_9 = 'I36' || CIE10_10 = 'I36') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I37($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I37' || CIE10_2 = 'I37' || CIE10_3 = 'I37' || CIE10_4 = 'I37' || CIE10_5 = 'I37' || CIE10_6 = 'I37' || CIE10_7 = 'I37' || CIE10_8 = 'I37' || CIE10_9 = 'I37' || CIE10_10 = 'I37') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I38($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I38' || CIE10_2 = 'I38' || CIE10_3 = 'I38' || CIE10_4 = 'I38' || CIE10_5 = 'I38' || CIE10_6 = 'I38' || CIE10_7 = 'I38' || CIE10_8 = 'I38' || CIE10_9 = 'I38' || CIE10_10 = 'I38') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I39($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I39' || CIE10_2 = 'I39' || CIE10_3 = 'I39' || CIE10_4 = 'I39' || CIE10_5 = 'I39' || CIE10_6 = 'I39' || CIE10_7 = 'I39' || CIE10_8 = 'I39' || CIE10_9 = 'I39' || CIE10_10 = 'I39') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I40($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I40' || CIE10_2 = 'I40' || CIE10_3 = 'I40' || CIE10_4 = 'I40' || CIE10_5 = 'I40' || CIE10_6 = 'I40' || CIE10_7 = 'I40' || CIE10_8 = 'I40' || CIE10_9 = 'I40' || CIE10_10 = 'I40') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I41($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I41' || CIE10_2 = 'I41' || CIE10_3 = 'I41' || CIE10_4 = 'I41' || CIE10_5 = 'I41' || CIE10_6 = 'I41' || CIE10_7 = 'I41' || CIE10_8 = 'I41' || CIE10_9 = 'I41' || CIE10_10 = 'I41') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I42($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I42' || CIE10_2 = 'I42' || CIE10_3 = 'I42' || CIE10_4 = 'I42' || CIE10_5 = 'I42' || CIE10_6 = 'I42' || CIE10_7 = 'I42' || CIE10_8 = 'I42' || CIE10_9 = 'I42' || CIE10_10 = 'I42') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I43($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I43' || CIE10_2 = 'I43' || CIE10_3 = 'I43' || CIE10_4 = 'I43' || CIE10_5 = 'I43' || CIE10_6 = 'I43' || CIE10_7 = 'I43' || CIE10_8 = 'I43' || CIE10_9 = 'I43' || CIE10_10 = 'I43') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I44($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I44' || CIE10_2 = 'I44' || CIE10_3 = 'I44' || CIE10_4 = 'I44' || CIE10_5 = 'I44' || CIE10_6 = 'I44' || CIE10_7 = 'I44' || CIE10_8 = 'I44' || CIE10_9 = 'I44' || CIE10_10 = 'I44') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I45($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I45' || CIE10_2 = 'I45' || CIE10_3 = 'I45' || CIE10_4 = 'I45' || CIE10_5 = 'I45' || CIE10_6 = 'I45' || CIE10_7 = 'I45' || CIE10_8 = 'I45' || CIE10_9 = 'I45' || CIE10_10 = 'I45') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I46($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I46' || CIE10_2 = 'I46' || CIE10_3 = 'I46' || CIE10_4 = 'I46' || CIE10_5 = 'I46' || CIE10_6 = 'I46' || CIE10_7 = 'I46' || CIE10_8 = 'I46' || CIE10_9 = 'I46' || CIE10_10 = 'I46') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I47($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I47' || CIE10_2 = 'I47' || CIE10_3 = 'I47' || CIE10_4 = 'I47' || CIE10_5 = 'I47' || CIE10_6 = 'I47' || CIE10_7 = 'I47' || CIE10_8 = 'I47' || CIE10_9 = 'I47' || CIE10_10 = 'I47') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I48($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I48' || CIE10_2 = 'I48' || CIE10_3 = 'I48' || CIE10_4 = 'I48' || CIE10_5 = 'I48' || CIE10_6 = 'I48' || CIE10_7 = 'I48' || CIE10_8 = 'I48' || CIE10_9 = 'I48' || CIE10_10 = 'I48') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I49($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I49' || CIE10_2 = 'I49' || CIE10_3 = 'I49' || CIE10_4 = 'I49' || CIE10_5 = 'I49' || CIE10_6 = 'I49' || CIE10_7 = 'I49' || CIE10_8 = 'I49' || CIE10_9 = 'I49' || CIE10_10 = 'I49') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I50($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I50' || CIE10_2 = 'I50' || CIE10_3 = 'I50' || CIE10_4 = 'I50' || CIE10_5 = 'I50' || CIE10_6 = 'I50' || CIE10_7 = 'I50' || CIE10_8 = 'I50' || CIE10_9 = 'I50' || CIE10_10 = 'I50') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I51($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I51' || CIE10_2 = 'I51' || CIE10_3 = 'I51' || CIE10_4 = 'I51' || CIE10_5 = 'I51' || CIE10_6 = 'I51' || CIE10_7 = 'I51' || CIE10_8 = 'I51' || CIE10_9 = 'I51' || CIE10_10 = 'I51') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I52($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I52' || CIE10_2 = 'I52' || CIE10_3 = 'I52' || CIE10_4 = 'I52' || CIE10_5 = 'I52' || CIE10_6 = 'I52' || CIE10_7 = 'I52' || CIE10_8 = 'I52' || CIE10_9 = 'I52' || CIE10_10 = 'I52') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I60($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I60' || CIE10_2 = 'I60' || CIE10_3 = 'I60' || CIE10_4 = 'I60' || CIE10_5 = 'I60' || CIE10_6 = 'I60' || CIE10_7 = 'I60' || CIE10_8 = 'I60' || CIE10_9 = 'I60' || CIE10_10 = 'I60') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I61($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I61' || CIE10_2 = 'I61' || CIE10_3 = 'I61' || CIE10_4 = 'I61' || CIE10_5 = 'I61' || CIE10_6 = 'I61' || CIE10_7 = 'I61' || CIE10_8 = 'I61' || CIE10_9 = 'I61' || CIE10_10 = 'I61') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I62($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I62' || CIE10_2 = 'I62' || CIE10_3 = 'I62' || CIE10_4 = 'I62' || CIE10_5 = 'I62' || CIE10_6 = 'I62' || CIE10_7 = 'I62' || CIE10_8 = 'I62' || CIE10_9 = 'I62' || CIE10_10 = 'I62') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I63($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I63' || CIE10_2 = 'I63' || CIE10_3 = 'I63' || CIE10_4 = 'I63' || CIE10_5 = 'I63' || CIE10_6 = 'I63' || CIE10_7 = 'I63' || CIE10_8 = 'I63' || CIE10_9 = 'I63' || CIE10_10 = 'I63') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I64($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I64' || CIE10_2 = 'I64' || CIE10_3 = 'I64' || CIE10_4 = 'I64' || CIE10_5 = 'I64' || CIE10_6 = 'I64' || CIE10_7 = 'I64' || CIE10_8 = 'I64' || CIE10_9 = 'I64' || CIE10_10 = 'I64') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I65($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I65' || CIE10_2 = 'I65' || CIE10_3 = 'I65' || CIE10_4 = 'I65' || CIE10_5 = 'I65' || CIE10_6 = 'I65' || CIE10_7 = 'I65' || CIE10_8 = 'I65' || CIE10_9 = 'I65' || CIE10_10 = 'I65') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I66($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I66' || CIE10_2 = 'I66' || CIE10_3 = 'I66' || CIE10_4 = 'I66' || CIE10_5 = 'I66' || CIE10_6 = 'I66' || CIE10_7 = 'I66' || CIE10_8 = 'I66' || CIE10_9 = 'I66' || CIE10_10 = 'I66') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I67($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I67' || CIE10_2 = 'I67' || CIE10_3 = 'I67' || CIE10_4 = 'I67' || CIE10_5 = 'I67' || CIE10_6 = 'I67' || CIE10_7 = 'I67' || CIE10_8 = 'I67' || CIE10_9 = 'I67' || CIE10_10 = 'I67') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I68($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I68' || CIE10_2 = 'I68' || CIE10_3 = 'I68' || CIE10_4 = 'I68' || CIE10_5 = 'I68' || CIE10_6 = 'I68' || CIE10_7 = 'I68' || CIE10_8 = 'I68' || CIE10_9 = 'I68' || CIE10_10 = 'I68') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I69($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I69' || CIE10_2 = 'I69' || CIE10_3 = 'I69' || CIE10_4 = 'I69' || CIE10_5 = 'I69' || CIE10_6 = 'I69' || CIE10_7 = 'I69' || CIE10_8 = 'I69' || CIE10_9 = 'I69' || CIE10_10 = 'I69') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I70($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I70' || CIE10_2 = 'I70' || CIE10_3 = 'I70' || CIE10_4 = 'I70' || CIE10_5 = 'I70' || CIE10_6 = 'I70' || CIE10_7 = 'I70' || CIE10_8 = 'I70' || CIE10_9 = 'I70' || CIE10_10 = 'I70') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I71($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I71' || CIE10_2 = 'I71' || CIE10_3 = 'I71' || CIE10_4 = 'I71' || CIE10_5 = 'I71' || CIE10_6 = 'I71' || CIE10_7 = 'I71' || CIE10_8 = 'I71' || CIE10_9 = 'I71' || CIE10_10 = 'I71') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I72($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I72' || CIE10_2 = 'I72' || CIE10_3 = 'I72' || CIE10_4 = 'I72' || CIE10_5 = 'I72' || CIE10_6 = 'I72' || CIE10_7 = 'I72' || CIE10_8 = 'I72' || CIE10_9 = 'I72' || CIE10_10 = 'I72') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I73($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I73' || CIE10_2 = 'I73' || CIE10_3 = 'I73' || CIE10_4 = 'I73' || CIE10_5 = 'I73' || CIE10_6 = 'I73' || CIE10_7 = 'I73' || CIE10_8 = 'I73' || CIE10_9 = 'I73' || CIE10_10 = 'I73') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I74($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I74' || CIE10_2 = 'I74' || CIE10_3 = 'I74' || CIE10_4 = 'I74' || CIE10_5 = 'I74' || CIE10_6 = 'I74' || CIE10_7 = 'I74' || CIE10_8 = 'I74' || CIE10_9 = 'I74' || CIE10_10 = 'I74') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I77($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I77' || CIE10_2 = 'I77' || CIE10_3 = 'I77' || CIE10_4 = 'I77' || CIE10_5 = 'I77' || CIE10_6 = 'I77' || CIE10_7 = 'I77' || CIE10_8 = 'I77' || CIE10_9 = 'I77' || CIE10_10 = 'I77') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }    
+    public static function I78($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I78' || CIE10_2 = 'I78' || CIE10_3 = 'I78' || CIE10_4 = 'I78' || CIE10_5 = 'I78' || CIE10_6 = 'I78' || CIE10_7 = 'I78' || CIE10_8 = 'I78' || CIE10_9 = 'I78' || CIE10_10= 'I78') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I79($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I79' || CIE10_2 = 'I79' || CIE10_3 = 'I79' || CIE10_4 = 'I79' || CIE10_5 = 'I79' || CIE10_6 = 'I79' || CIE10_7 = 'I79' || CIE10_8 = 'I79' || CIE10_9 = 'I79' || CIE10_10 = 'I79') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I80($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I80' || CIE10_2 = 'I80' || CIE10_3 = 'I80' || CIE10_4 = 'I80' || CIE10_5 = 'I80' || CIE10_6 = 'I80' || CIE10_7 = 'I80' || CIE10_8 = 'I80' || CIE10_9 = 'I80' || CIE10_10 = 'I80') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+   public static function I81($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I81' || CIE10_2 = 'I81' || CIE10_3 = 'I81' || CIE10_4 = 'I81' || CIE10_5 = 'I81' || CIE10_6 = 'I81' || CIE10_7 = 'I81' || CIE10_8 = 'I81' || CIE10_9 = 'I81' || CIE10_10 = 'I81') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I82($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I82' || CIE10_2 = 'I82' || CIE10_3 = 'I82' || CIE10_4 = 'I82' || CIE10_5 = 'I82' || CIE10_6 = 'I82' || CIE10_7 = 'I82' || CIE10_8 = 'I82' || CIE10_9 = 'I82' || CIE10_10 = 'I82') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I83($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I83' || CIE10_2 = 'I83' || CIE10_3 = 'I83' || CIE10_4 = 'I83' || CIE10_5 = 'I83' || CIE10_6 = 'I83' || CIE10_7 = 'I83' || CIE10_8 = 'I83' || CIE10_9 = 'I83' || CIE10_10 = 'I83') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I85($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I85' || CIE10_2 = 'I85' || CIE10_3 = 'I85' || CIE10_4 = 'I85' || CIE10_5 = 'I85' || CIE10_6 = 'I85' || CIE10_7 = 'I85' || CIE10_8 = 'I85' || CIE10_9 = 'I85' || CIE10_10 = 'I85') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I86($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I86' || CIE10_2 = 'I86' || CIE10_3 = 'I86' || CIE10_4 = 'I86' || CIE10_5 = 'I86' || CIE10_6 = 'I86' || CIE10_7 = 'I86' || CIE10_8 = 'I86' || CIE10_9 = 'I86' || CIE10_10 = 'I86') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I87($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I87' || CIE10_2 = 'I87' || CIE10_3 = 'I87' || CIE10_4 = 'I87' || CIE10_5 = 'I87' || CIE10_6 = 'I87' || CIE10_7 = 'I87' || CIE10_8 = 'I87' || CIE10_9 = 'I87' || CIE10_10 = 'I87') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I88($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I88' || CIE10_2 = 'I88' || CIE10_3 = 'I88' || CIE10_4 = 'I88' || CIE10_5 = 'I88' || CIE10_6 = 'I88' || CIE10_7 = 'I88' || CIE10_8 = 'I88' || CIE10_9 = 'I88' || CIE10_10 = 'I88') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I89($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I89' || CIE10_2 = 'I89' || CIE10_3 = 'I89' || CIE10_4 = 'I89' || CIE10_5 = 'I89' || CIE10_6 = 'I89' || CIE10_7 = 'I89' || CIE10_8 = 'I89' || CIE10_9 = 'I89' || CIE10_10 = 'I89') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I95($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I95' || CIE10_2 = 'I95' || CIE10_3 = 'I95' || CIE10_4 = 'I95' || CIE10_5 = 'I95' || CIE10_6 = 'I95' || CIE10_7 = 'I95' || CIE10_8 = 'I95' || CIE10_9 = 'I95' || CIE10_10 = 'I95') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I97($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I97' || CIE10_2 = 'I97' || CIE10_3 = 'I97' || CIE10_4 = 'I97' || CIE10_5 = 'I97' || CIE10_6 = 'I97' || CIE10_7 = 'I97' || CIE10_8 = 'I97' || CIE10_9 = 'I97' || CIE10_10 = 'I97') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function I98($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I98' || CIE10_2 = 'I98' || CIE10_3 = 'I98' || CIE10_4 = 'I98' || CIE10_5 = 'I98' || CIE10_6 = 'I98' || CIE10_7 = 'I98' || CIE10_8 = 'I98' || CIE10_9 = 'I98' || CIE10_10 = 'I98') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function I99($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'I99' || CIE10_2 = 'I99' || CIE10_3 = 'I99' || CIE10_4 = 'I99' || CIE10_5 = 'I99' || CIE10_6 = 'I99' || CIE10_7 = 'I99' || CIE10_8 = 'I99' || CIE10_9 = 'I99' || CIE10_10 = 'I99') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    
+    public static function Q201($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q201' || CIE10_2 = 'Q201' || CIE10_3 = 'Q201' || CIE10_4 = 'Q201' || CIE10_5 = 'Q201' || CIE10_6 = 'Q201' || CIE10_7 = 'Q201' || CIE10_8 = 'Q201' || CIE10_9 = 'Q201' || CIE10_10 = 'Q201') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q202($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q202' || CIE10_2 = 'Q202' || CIE10_3 = 'Q202' || CIE10_4 = 'Q202' || CIE10_5 = 'Q202' || CIE10_6 = 'Q202' || CIE10_7 = 'Q202' || CIE10_8 = 'Q202' || CIE10_9 = 'Q202' || CIE10_10 = 'Q202') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q203($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q203' || CIE10_2 = 'Q203' || CIE10_3 = 'Q203' || CIE10_4 = 'Q203' || CIE10_5 = 'Q203' || CIE10_6 = 'Q203' || CIE10_7 = 'Q203' || CIE10_8 = 'Q203' || CIE10_9 = 'Q203' || CIE10_10 = 'Q203') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q204($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q204' || CIE10_2 = 'Q204' || CIE10_3 = 'Q204' || CIE10_4 = 'Q204' || CIE10_5 = 'Q204' || CIE10_6 = 'Q204' || CIE10_7 = 'Q204' || CIE10_8 = 'Q204' || CIE10_9 = 'Q204' || CIE10_10 = 'Q204') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q205($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q205' || CIE10_2 = 'Q205' || CIE10_3 = 'Q205' || CIE10_4 = 'Q205' || CIE10_5 = 'Q205' || CIE10_6 = 'Q205' || CIE10_7 = 'Q205' || CIE10_8 = 'Q205' || CIE10_9 = 'Q205' || CIE10_10 = 'Q205') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q206($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q206' || CIE10_2 = 'Q206' || CIE10_3 = 'Q206' || CIE10_4 = 'Q206' || CIE10_5 = 'Q206' || CIE10_6 = 'Q206' || CIE10_7 = 'Q206' || CIE10_8 = 'Q206' || CIE10_9 = 'Q206' || CIE10_10 = 'Q206') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q208($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q208' || CIE10_2 = 'Q208' || CIE10_3 = 'Q208' || CIE10_4 = 'Q208' || CIE10_5 = 'Q208' || CIE10_6 = 'Q208' || CIE10_7 = 'Q208' || CIE10_8 = 'Q208' || CIE10_9 = 'Q208' || CIE10_10 = 'Q208') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q209($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q209' || CIE10_2 = 'Q209' || CIE10_3 = 'Q209' || CIE10_4 = 'Q209' || CIE10_5 = 'Q209' || CIE10_6 = 'Q209' || CIE10_7 = 'Q209' || CIE10_8 = 'Q209' || CIE10_9 = 'Q209' || CIE10_10 = 'Q209') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q210($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q210' || CIE10_2 = 'Q210' || CIE10_3 = 'Q210' || CIE10_4 = 'Q210' || CIE10_5 = 'Q210' || CIE10_6 = 'Q210' || CIE10_7 = 'Q210' || CIE10_8 = 'Q210' || CIE10_9 = 'Q210' || CIE10_10 = 'Q210') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q211($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q211' || CIE10_2 = 'Q211' || CIE10_3 = 'Q211' || CIE10_4 = 'Q211' || CIE10_5 = 'Q211' || CIE10_6 = 'Q211' || CIE10_7 = 'Q211' || CIE10_8 = 'Q211' || CIE10_9 = 'Q211' || CIE10_10 = 'Q211') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q212($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q212' || CIE10_2 = 'Q212' || CIE10_3 = 'Q212' || CIE10_4 = 'Q212' || CIE10_5 = 'Q212' || CIE10_6 = 'Q212' || CIE10_7 = 'Q212' || CIE10_8 = 'Q212' || CIE10_9 = 'Q212' || CIE10_10 = 'Q212') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q213($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q213' || CIE10_2 = 'Q213' || CIE10_3 = 'Q213' || CIE10_4 = 'Q213' || CIE10_5 = 'Q213' || CIE10_6 = 'Q213' || CIE10_7 = 'Q213' || CIE10_8 = 'Q213' || CIE10_9 = 'Q213' || CIE10_10 = 'Q213') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q214($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q214' || CIE10_2 = 'Q214' || CIE10_3 = 'Q214' || CIE10_4 = 'Q214' || CIE10_5 = 'Q214' || CIE10_6 = 'Q214' || CIE10_7 = 'Q214' || CIE10_8 = 'Q214' || CIE10_9 = 'Q214' || CIE10_10 = 'Q214') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q218($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q218' || CIE10_2 = 'Q218' || CIE10_3 = 'Q218' || CIE10_4 = 'Q218' || CIE10_5 = 'Q218' || CIE10_6 = 'Q218' || CIE10_7 = 'Q218' || CIE10_8 = 'Q218' || CIE10_9 = 'Q218' || CIE10_10 = '218') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q219($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q219' || CIE10_2 = 'Q219' || CIE10_3 = 'Q219' || CIE10_4 = 'Q219' || CIE10_5 = 'Q219' || CIE10_6 = 'Q219' || CIE10_7 = 'Q219' || CIE10_8 = 'Q219' || CIE10_9 = 'Q219' || CIE10_10 = 'Q219') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q220($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q220' || CIE10_2 = 'Q220' || CIE10_3 = 'Q220' || CIE10_4 = 'Q220' || CIE10_5 = 'Q220' || CIE10_6 = 'Q220' || CIE10_7 = 'Q220' || CIE10_8 = 'Q220' || CIE10_9 = 'Q220' || CIE10_10 = 'Q220') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q221($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q221' || CIE10_2 = 'Q221' || CIE10_3 = 'Q221' || CIE10_4 = 'Q221' || CIE10_5 = 'Q221' || CIE10_6 = 'Q221' || CIE10_7 = 'Q221' || CIE10_8 = 'Q221' || CIE10_9 = 'Q221' || CIE10_10 = 'Q221') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q222($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q222' || CIE10_2 = 'Q222' || CIE10_3 = 'Q222' || CIE10_4 = 'Q222' || CIE10_5 = 'Q222' || CIE10_6 = 'Q222' || CIE10_7 = 'Q222' || CIE10_8 = 'Q222' || CIE10_9 = 'Q222' || CIE10_10 = 'Q222') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q223($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q223' || CIE10_2 = 'Q223' || CIE10_3 = 'Q223' || CIE10_4 = 'Q223' || CIE10_5 = 'Q223' || CIE10_6 = 'Q223' || CIE10_7 = 'Q223' || CIE10_8 = 'Q223' || CIE10_9 = 'Q223' || CIE10_10 = 'Q223') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q224($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q224' || CIE10_2 = 'Q224' || CIE10_3 = 'Q224' || CIE10_4 = 'Q224' || CIE10_5 = 'Q224' || CIE10_6 = 'Q224' || CIE10_7 = 'Q224' || CIE10_8 = 'Q224' || CIE10_9 = '224Q224' || CIE10_10 = 'Q224') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q225($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q225' || CIE10_2 = 'Q225' || CIE10_3 = 'Q225' || CIE10_4 = 'Q225' || CIE10_5 = 'Q225' || CIE10_6 = 'Q225' || CIE10_7 = 'Q225' || CIE10_8 = 'Q225' || CIE10_9 = 'Q225' || CIE10_10 = 'Q225') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q226($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q226' || CIE10_2 = 'Q226' || CIE10_3 = 'Q226' || CIE10_4 = 'Q226' || CIE10_5 = 'Q226' || CIE10_6 = 'Q226' || CIE10_7 = 'Q226' || CIE10_8 = 'Q226' || CIE10_9 = 'Q226' || CIE10_10 = 'Q226') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q228($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q228' || CIE10_2 = 'Q228' || CIE10_3 = 'Q228' || CIE10_4 = 'Q228' || CIE10_5 = 'Q228' || CIE10_6 = 'Q228' || CIE10_7 = 'Q228' || CIE10_8 = 'Q228' || CIE10_9 = 'Q228' || CIE10_10 = 'Q228') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q229($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q229' || CIE10_2 = 'Q229' || CIE10_3 = 'Q229' || CIE10_4 = 'Q229' || CIE10_5 = 'Q229' || CIE10_6 = 'Q229' || CIE10_7 = 'Q229' || CIE10_8 = 'Q229' || CIE10_9 = 'Q229' || CIE10_10 = 'Q229') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q230($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q230' || CIE10_2 = 'Q230' || CIE10_3 = 'Q230' || CIE10_4 = 'Q230' || CIE10_5 = 'Q230' || CIE10_6 = 'Q230' || CIE10_7 = 'Q230' || CIE10_8 = 'Q230' || CIE10_9 = 'Q230' || CIE10_10 = 'Q230') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q231($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q231' || CIE10_2 = 'Q231' || CIE10_3 = 'Q231' || CIE10_4 = 'Q231' || CIE10_5 = 'Q231' || CIE10_6 = 'Q231' || CIE10_7 = 'Q231' || CIE10_8 = 'Q231' || CIE10_9 = 'Q231' || CIE10_10 = 'Q231') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }public static function Q232($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q232' || CIE10_2 = 'Q232' || CIE10_3 = 'Q232' || CIE10_4 = 'Q232' || CIE10_5 = 'Q232' || CIE10_6 = 'Q232' || CIE10_7 = 'Q232' || CIE10_8 = 'Q232' || CIE10_9 = 'Q232' || CIE10_10 = 'Q232') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q233($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q233' || CIE10_2 = 'Q233' || CIE10_3 = 'Q233' || CIE10_4 = 'Q233' || CIE10_5 = 'Q233' || CIE10_6 = 'Q233' || CIE10_7 = 'Q233' || CIE10_8 = 'Q233' || CIE10_9 = 'Q233' || CIE10_10 = 'Q233') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q234($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q234' || CIE10_2 = 'Q234' || CIE10_3 = 'Q234' || CIE10_4 = 'Q234' || CIE10_5 = 'Q234' || CIE10_6 = 'Q234' || CIE10_7 = 'Q234' || CIE10_8 = 'Q234' || CIE10_9 = 'Q234' || CIE10_10 = 'Q234') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q238($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q238' || CIE10_2 = 'Q238' || CIE10_3 = 'Q238' || CIE10_4 = 'Q238' || CIE10_5 = 'Q238' || CIE10_6 = 'Q238' || CIE10_7 = 'Q238' || CIE10_8 = 'Q238' || CIE10_9 = 'Q238' || CIE10_10 = 'Q238') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q239($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q239' || CIE10_2 = 'Q239' || CIE10_3 = 'Q239' || CIE10_4 = 'Q239' || CIE10_5 = 'Q239' || CIE10_6 = 'Q239' || CIE10_7 = 'Q239' || CIE10_8 = 'Q239' || CIE10_9 = 'Q239' || CIE10_10 = 'Q239') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q240($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q240' || CIE10_2 = 'Q240' || CIE10_3 = 'Q240' || CIE10_4 = 'Q240' || CIE10_5 = 'Q240' || CIE10_6 = 'Q240' || CIE10_7 = 'Q240' || CIE10_8 = 'Q240' || CIE10_9 = 'Q240' || CIE10_10 = 'Q240') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q241($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q241' || CIE10_2 = 'Q241' || CIE10_3 = 'Q241' || CIE10_4 = 'Q241' || CIE10_5 = 'Q241' || CIE10_6 = 'Q241' || CIE10_7 = 'Q241' || CIE10_8 = 'Q241' || CIE10_9 = 'Q241' || CIE10_10 = 'Q241') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q242($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q242' || CIE10_2 = 'Q242' || CIE10_3 = 'Q242' || CIE10_4 = 'Q242' || CIE10_5 = 'Q242' || CIE10_6 = 'Q242' || CIE10_7 = 'Q242' || CIE10_8 = 'Q242' || CIE10_9 = 'Q242' || CIE10_10 = 'Q242') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q243($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q243' || CIE10_2 = 'Q243' || CIE10_3 = 'Q243' || CIE10_4 = 'Q243' || CIE10_5 = 'Q243' || CIE10_6 = 'Q243' || CIE10_7 = 'Q243' || CIE10_8 = 'Q243' || CIE10_9 = 'Q243' || CIE10_10 = 'Q243') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q244($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q244' || CIE10_2 = 'Q244' || CIE10_3 = 'Q244' || CIE10_4 = 'Q244' || CIE10_5 = 'Q244' || CIE10_6 = 'Q244' || CIE10_7 = 'Q244' || CIE10_8 = 'Q244' || CIE10_9 = 'Q244' || CIE10_10 = 'Q244') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q245($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q245' || CIE10_2 = 'Q245' || CIE10_3 = 'Q245' || CIE10_4 = 'Q245' || CIE10_5 = 'Q245' || CIE10_6 = 'Q245' || CIE10_7 = 'Q245' || CIE10_8 = 'Q245' || CIE10_9 = 'Q245' || CIE10_10 = 'Q245') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q246($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q246' || CIE10_2 = 'Q246' || CIE10_3 = 'Q246' || CIE10_4 = 'Q246' || CIE10_5 = 'Q246' || CIE10_6 = 'Q246' || CIE10_7 = 'Q246' || CIE10_8 = 'Q246' || CIE10_9 = 'Q246' || CIE10_10 = 'Q246') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q248($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q248' || CIE10_2 = 'Q248' || CIE10_3 = 'Q248' || CIE10_4 = 'Q248' || CIE10_5 = 'Q248' || CIE10_6 = 'Q248' || CIE10_7 = 'Q248' || CIE10_8 = 'Q248' || CIE10_9 = 'Q248' || CIE10_10 = 'Q248') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q249($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q249' || CIE10_2 = 'Q249' || CIE10_3 = 'Q249' || CIE10_4 = 'Q249' || CIE10_5 = 'Q249' || CIE10_6 = 'Q249' || CIE10_7 = 'Q249' || CIE10_8 = 'Q249' || CIE10_9 = 'Q249' || CIE10_10 = 'Q249') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q250($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q250' || CIE10_2 = 'Q250' || CIE10_3 = 'Q250' || CIE10_4 = 'Q250' || CIE10_5 = 'Q250' || CIE10_6 = 'Q250' || CIE10_7 = 'Q250' || CIE10_8 = 'Q250' || CIE10_9 = 'Q250' || CIE10_10 = 'Q250') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q251($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q251' || CIE10_2 = 'Q251' || CIE10_3 = 'Q251' || CIE10_4 = 'Q251' || CIE10_5 = 'Q251' || CIE10_6 = 'Q251' || CIE10_7 = 'Q251' || CIE10_8 = 'Q251' || CIE10_9 = 'Q251' || CIE10_10 = 'Q251') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q252($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q' || CIE10_2 = 'Q252' || CIE10_3 = 'Q252' || CIE10_4 = 'Q252' || CIE10_5 = 'Q252' || CIE10_6 = 'Q252' || CIE10_7 = 'Q252' || CIE10_8 = 'Q252' || CIE10_9 = 'Q252' || CIE10_10 = 'Q252') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q253($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q253' || CIE10_2 = 'Q253' || CIE10_3 = 'Q253' || CIE10_4 = 'Q253' || CIE10_5 = 'Q253' || CIE10_6 = 'Q253' || CIE10_7 = 'Q253' || CIE10_8 = 'Q253' || CIE10_9 = 'Q253' || CIE10_10 = 'Q253') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q254($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q254' || CIE10_2 = 'Q254' || CIE10_3 = 'Q254' || CIE10_4 = 'Q254' || CIE10_5 = 'Q254' || CIE10_6 = 'Q254' || CIE10_7 = 'Q254' || CIE10_8 = 'Q254' || CIE10_9 = 'Q254' || CIE10_10 = 'Q254') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q255($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q255' || CIE10_2 = 'Q255' || CIE10_3 = 'Q255' || CIE10_4 = 'Q255' || CIE10_5 = 'Q255' || CIE10_6 = 'Q255' || CIE10_7 = 'Q255' || CIE10_8 = 'Q255' || CIE10_9 = 'Q255' || CIE10_10 = 'Q255') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q256($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q256' || CIE10_2 = 'Q256' || CIE10_3 = 'Q256' || CIE10_4 = 'Q256' || CIE10_5 = 'Q256' || CIE10_6 = 'Q256' || CIE10_7 = 'Q256' || CIE10_8 = 'Q256' || CIE10_9 = 'Q256' || CIE10_10 = 'Q256') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q257($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q257' || CIE10_2 = 'Q257' || CIE10_3 = 'Q' || CIE10_4 = 'Q257' || CIE10_5 = 'Q257' || CIE10_6 = 'Q257' || CIE10_7 = 'Q257' || CIE10_8 = 'Q257' || CIE10_9 = 'Q257' || CIE10_10 = 'Q257') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q258($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q258' || CIE10_2 = 'Q258' || CIE10_3 = 'Q258' || CIE10_4 = 'Q258' || CIE10_5 = 'Q258' || CIE10_6 = 'Q258' || CIE10_7 = 'Q258' || CIE10_8 = 'Q258' || CIE10_9 = 'Q258' || CIE10_10 = 'Q258') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q259($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q259' || CIE10_2 = 'Q259' || CIE10_3 = 'Q259' || CIE10_4 = 'Q259' || CIE10_5 = 'Q259' || CIE10_6 = 'Q259' || CIE10_7 = 'Q259' || CIE10_8 = 'Q259' || CIE10_9 = 'Q259' || CIE10_10 = 'Q259') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q260($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q260' || CIE10_2 = 'Q260' || CIE10_3 = 'Q260' || CIE10_4 = 'Q260' || CIE10_5 = 'Q260' || CIE10_6 = 'Q260' || CIE10_7 = 'Q260' || CIE10_8 = 'Q260' || CIE10_9 = 'Q260' || CIE10_10 = 'Q260') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q261($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q261' || CIE10_2 = 'Q261' || CIE10_3 = 'Q261' || CIE10_4 = 'Q261' || CIE10_5 = 'Q261' || CIE10_6 = 'Q261' || CIE10_7 = 'Q261' || CIE10_8 = 'Q261' || CIE10_9 = 'Q261' || CIE10_10 = 'Q261') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q262($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q262' || CIE10_2 = 'Q262' || CIE10_3 = 'Q262' || CIE10_4 = 'Q262' || CIE10_5 = 'Q262' || CIE10_6 = 'Q262' || CIE10_7 = 'Q262' || CIE10_8 = 'Q262' || CIE10_9 = 'Q262' || CIE10_10 = 'Q262') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q263($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q263' || CIE10_2 = 'Q263' || CIE10_3 = '263' || CIE10_4 = 'Q263' || CIE10_5 = 'Q263' || CIE10_6 = 'Q263' || CIE10_7 = 'Q263' || CIE10_8 = 'Q263' || CIE10_9 = 'Q263' || CIE10_10 = 'Q263') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q264($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q264' || CIE10_2 = 'Q264' || CIE10_3 = 'Q264' || CIE10_4 = 'Q264' || CIE10_5 = 'Q264' || CIE10_6 = 'Q264' || CIE10_7 = 'Q264' || CIE10_8 = 'Q264' || CIE10_9 = 'Q264' || CIE10_10 = 'Q264') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q265($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q265' || CIE10_2 = 'Q265' || CIE10_3 = 'Q265' || CIE10_4 = 'Q265' || CIE10_5 = 'Q265' || CIE10_6 = 'Q265' || CIE10_7 = 'Q265' || CIE10_8 = 'Q265' || CIE10_9 = 'Q265' || CIE10_10 = 'Q265') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q266($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q266' || CIE10_2 = 'Q266' || CIE10_3 = 'Q266' || CIE10_4 = 'Q266' || CIE10_5 = 'Q266' || CIE10_6 = 'Q266' || CIE10_7 = 'Q266' || CIE10_8 = 'Q266' || CIE10_9 = 'Q266' || CIE10_10 = 'Q266') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q268($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q268' || CIE10_2 = 'Q268' || CIE10_3 = 'Q268' || CIE10_4 = 'Q268' || CIE10_5 = 'Q268' || CIE10_6 = 'Q268' || CIE10_7 = 'Q268' || CIE10_8 = 'Q268' || CIE10_9 = 'Q268' || CIE10_10 = 'Q268') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q269($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q269' || CIE10_2 = 'Q269' || CIE10_3 = 'Q269' || CIE10_4 = 'Q269' || CIE10_5 = 'Q269' || CIE10_6 = 'Q269' || CIE10_7 = 'Q269' || CIE10_8 = 'Q269' || CIE10_9 = 'Q269' || CIE10_10 = 'Q269') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q270($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q270' || CIE10_2 = 'Q270' || CIE10_3 = 'Q270' || CIE10_4 = 'Q270' || CIE10_5 = 'Q270' || CIE10_6 = 'Q270' || CIE10_7 = 'Q270' || CIE10_8 = 'Q270' || CIE10_9 = 'Q270' || CIE10_10 = 'Q270') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q271($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q271' || CIE10_2 = 'Q271' || CIE10_3 = 'Q271' || CIE10_4 = 'Q271' || CIE10_5 = 'Q271' || CIE10_6 = 'Q271' || CIE10_7 = 'Q271' || CIE10_8 = 'Q271' || CIE10_9 = 'Q271' || CIE10_10 = 'Q271') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q272($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q272' || CIE10_2 = 'Q272' || CIE10_3 = 'Q272' || CIE10_4 = 'Q272' || CIE10_5 = 'Q272' || CIE10_6 = 'Q272' || CIE10_7 = 'Q272' || CIE10_8 = 'Q272' || CIE10_9 = 'Q272' || CIE10_10 = 'Q272') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q273($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q273' || CIE10_2 = 'Q273' || CIE10_3 = 'Q273' || CIE10_4 = 'Q273' || CIE10_5 = 'Q273' || CIE10_6 = 'Q273' || CIE10_7 = 'Q273' || CIE10_8 = 'Q273' || CIE10_9 = 'Q273' || CIE10_10 = 'Q273') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function Q274($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q274' || CIE10_2 = 'Q274' || CIE10_3 = 'Q274' || CIE10_4 = 'Q274' || CIE10_5 = 'Q274' || CIE10_6 = 'Q274' || CIE10_7 = 'Q274' || CIE10_8 = 'Q274' || CIE10_9 = 'Q274' || CIE10_10 = 'Q274') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q278($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q278' || CIE10_2 = 'Q278' || CIE10_3 = 'Q278' || CIE10_4 = 'Q278' || CIE10_5 = 'Q278' || CIE10_6 = 'Q278' || CIE10_7 = 'Q278' || CIE10_8 = 'Q278' || CIE10_9 = 'Q278' || CIE10_10 = 'Q278') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q279($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q279' || CIE10_2 = 'Q279' || CIE10_3 = 'Q279' || CIE10_4 = 'Q279' || CIE10_5 = 'Q279' || CIE10_6 = 'Q279' || CIE10_7 = 'Q279' || CIE10_8 = 'Q279' || CIE10_9 = 'Q279' || CIE10_10 = 'Q279') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q280($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q280' || CIE10_2 = 'Q280' || CIE10_3 = 'Q280' || CIE10_4 = 'Q280' || CIE10_5 = 'Q280' || CIE10_6 = 'Q280' || CIE10_7 = 'Q280' || CIE10_8 = 'Q280' || CIE10_9 = 'Q280' || CIE10_10 = 'Q280') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q281($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q281' || CIE10_2 = 'Q281' || CIE10_3 = 'Q281' || CIE10_4 = 'Q281' || CIE10_5 = 'Q281' || CIE10_6 = 'Q281' || CIE10_7 = 'Q281' || CIE10_8 = 'Q281' || CIE10_9 = 'Q281' || CIE10_10 = 'Q281') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q282($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q282' || CIE10_2 = 'Q282' || CIE10_3 = 'Q282' || CIE10_4 = 'Q282' || CIE10_5 = 'Q282' || CIE10_6 = 'Q282' || CIE10_7 = 'Q282' || CIE10_8 = 'Q282' || CIE10_9 = 'Q282' || CIE10_10 = 'Q282') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q283($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q283' || CIE10_2 = 'Q283' || CIE10_3 = 'Q283' || CIE10_4 = 'Q283' || CIE10_5 = 'Q283' || CIE10_6 = 'Q283' || CIE10_7 = 'Q283' || CIE10_8 = 'Q283' || CIE10_9 = 'Q283' || CIE10_10 = 'Q283') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q288($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q288' || CIE10_2 = 'Q288' || CIE10_3 = 'Q288' || CIE10_4 = 'Q288' || CIE10_5 = 'Q288' || CIE10_6 = 'Q288' || CIE10_7 = 'Q288' || CIE10_8 = 'Q288' || CIE10_9 = 'Q288' || CIE10_10 = 'Q288') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q289($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q289' || CIE10_2 = 'Q289' || CIE10_3 = 'Q289' || CIE10_4 = 'Q289' || CIE10_5 = 'Q289' || CIE10_6 = 'Q289' || CIE10_7 = 'Q289' || CIE10_8 = 'Q289' || CIE10_9 = 'Q289' || CIE10_10 = 'Q289') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q20($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q20' || CIE10_2 = 'Q20' || CIE10_3 = 'Q20' || CIE10_4 = 'Q20' || CIE10_5 = 'Q20' || CIE10_6 = 'Q20' || CIE10_7 = 'Q20' || CIE10_8 = 'Q20' || CIE10_9 = 'Q20' || CIE10_10 = 'Q20') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q21($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q21' || CIE10_2 = 'Q21' || CIE10_3 = 'Q21' || CIE10_4 = 'Q21' || CIE10_5 = 'Q21' || CIE10_6 = 'Q21' || CIE10_7 = 'Q21' || CIE10_8 = 'Q21' || CIE10_9 = 'Q21' || CIE10_10 = 'Q21') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q22($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q22' || CIE10_2 = 'Q22' || CIE10_3 = 'Q22' || CIE10_4 = 'Q22' || CIE10_5 = 'Q22' || CIE10_6 = 'Q22' || CIE10_7 = 'Q22' || CIE10_8 = 'Q22' || CIE10_9 = 'Q22' || CIE10_10 = 'Q22') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q23($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q23' || CIE10_2 = 'Q23' || CIE10_3 = 'Q23' || CIE10_4 = 'Q23' || CIE10_5 = 'Q23' || CIE10_6 = 'Q23' || CIE10_7 = 'Q23' || CIE10_8 = 'Q23' || CIE10_9 = 'Q23' || CIE10_10 = 'Q23') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+      public static function Q24($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q24' || CIE10_2 = 'Q24' || CIE10_3 = 'Q24' || CIE10_4 = 'Q24' || CIE10_5 = 'Q24' || CIE10_6 = 'Q24' || CIE10_7 = 'Q24' || CIE10_8 = 'Q24' || CIE10_9 = 'Q24' || CIE10_10 = 'Q24') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+      public static function Q25($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q25' || CIE10_2 = 'Q25' || CIE10_3 = 'Q25' || CIE10_4 = 'Q25' || CIE10_5 = 'Q25' || CIE10_6 = 'Q25' || CIE10_7 = 'Q25' || CIE10_8 = 'Q25' || CIE10_9 = 'Q25' || CIE10_10 = 'Q25') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+      public static function Q26($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q26' || CIE10_2 = 'Q26' || CIE10_3 = 'Q26' || CIE10_4 = 'Q26' || CIE10_5 = 'Q26' || CIE10_6 = 'Q26' || CIE10_7 = 'Q26' || CIE10_8 = 'Q26' || CIE10_9 = 'Q26' || CIE10_10 = 'Q26') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+      public static function Q27($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q27' || CIE10_2 = 'Q27' || CIE10_3 = 'Q27' || CIE10_4 = 'Q27' || CIE10_5 = 'Q27' || CIE10_6 = 'Q27' || CIE10_7 = 'Q27' || CIE10_8 = 'Q27' || CIE10_9 = 'Q27' || CIE10_10 = 'Q27') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+     public static function Q28($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'Q28' || CIE10_2 = 'Q28' || CIE10_3 = 'Q28' || CIE10_4 = 'Q28' || CIE10_5 = 'Q28' || CIE10_6 = 'Q28' || CIE10_7 = 'Q28' || CIE10_8 = 'Q28' || CIE10_9 = 'Q28' || CIE10_10 = 'Q28') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R000($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R000' || CIE10_2 = 'R000' || CIE10_3 = 'R000' || CIE10_4 = 'R000' || CIE10_5 = 'R000' || CIE10_6 = 'R000' || CIE10_7 = 'R000' || CIE10_8 = 'R000' || CIE10_9 = 'R000' || CIE10_10 = 'R') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R001($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R001' || CIE10_2 = 'R' || CIE10_3 = 'R001' || CIE10_4 = 'R001' || CIE10_5 = 'R001' || CIE10_6 = 'R001' || CIE10_7 = 'R001' || CIE10_8 = 'R001' || CIE10_9 = 'R001' || CIE10_10 = 'R001') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R002($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R002' || CIE10_2 = 'R002' || CIE10_3 = 'R002' || CIE10_4 = 'R002' || CIE10_5 = 'R002' || CIE10_6 = 'R002' || CIE10_7 = 'R002' || CIE10_8 = 'R002' || CIE10_9 = 'R002' || CIE10_10 = 'R002') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R008($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R008' || CIE10_2 = 'R008' || CIE10_3 = 'R008' || CIE10_4 = 'R008' || CIE10_5 = 'R008' || CIE10_6 = 'R008' || CIE10_7 = 'R008' || CIE10_8 = 'R008' || CIE10_9 = 'R008' || CIE10_10 = 'R008') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R010($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R010' || CIE10_2 = 'R010' || CIE10_3 = 'R010' || CIE10_4 = 'R010' || CIE10_5 = 'R010' || CIE10_6 = 'R010' || CIE10_7 = 'R010' || CIE10_8 = 'R010' || CIE10_9 = 'R010' || CIE10_10 = 'R010') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R011($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R011' || CIE10_2 = 'R011' || CIE10_3 = 'R011' || CIE10_4 = 'R011' || CIE10_5 = 'R011' || CIE10_6 = 'R011' || CIE10_7 = 'R011' || CIE10_8 = 'R011' || CIE10_9 = 'R011' || CIE10_10 = 'R011') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R012($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R012' || CIE10_2 = 'R012' || CIE10_3 = 'R012' || CIE10_4 = 'R012' || CIE10_5 = 'R012' || CIE10_6 = 'R012' || CIE10_7 = 'R012' || CIE10_8 = 'R012' || CIE10_9 = 'R012' || CIE10_10 = 'R012') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R02X($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R02X' || CIE10_2 = 'R02X' || CIE10_3 = 'R02X' || CIE10_4 = 'R02X' || CIE10_5 = 'R02X' || CIE10_6 = 'R02X' || CIE10_7 = '02X' || CIE10_8 = '02X' || CIE10_9 = 'R02X' || CIE10_10 = 'R02X') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R030($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R030' || CIE10_2 = 'R030' || CIE10_3 = 'R030' || CIE10_4 = 'R030' || CIE10_5 = 'R030' || CIE10_6 = 'R030' || CIE10_7 = 'R030' || CIE10_8 = 'R030' || CIE10_9 = 'R030' || CIE10_10 = 'R') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R031($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R031' || CIE10_2 = 'R031' || CIE10_3 = 'R031' || CIE10_4 = 'R031' || CIE10_5 = 'R031' || CIE10_6 = 'R031' || CIE10_7 = 'R031' || CIE10_8 = 'R031' || CIE10_9 = 'R031' || CIE10_10 = 'R031') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R072($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R072' || CIE10_2 = 'R072' || CIE10_3 = 'R072' || CIE10_4 = 'R072' || CIE10_5 = 'R072' || CIE10_6 = 'R072' || CIE10_7 = 'R072' || CIE10_8 = 'R072' || CIE10_9 = 'R072' || CIE10_10 = 'R072') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R073($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R073' || CIE10_2 = 'R073' || CIE10_3 = 'R073' || CIE10_4 = 'R073' || CIE10_5 = 'R073' || CIE10_6 = 'R073' || CIE10_7 = 'R073' || CIE10_8 = 'R073' || CIE10_9 = 'R073' || CIE10_10 = 'R073') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R790($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R790' || CIE10_2 = 'R790' || CIE10_3 = 'R790' || CIE10_4 = 'R790' || CIE10_5 = 'R790' || CIE10_6 = 'R790' || CIE10_7 = 'R790' || CIE10_8 = 'R790' || CIE10_9 = 'R790' || CIE10_10 = 'R790') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R799($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R799' || CIE10_2 = 'R799' || CIE10_3 = 'R799' || CIE10_4 = 'R799' || CIE10_5 = 'R799' || CIE10_6 = 'R799' || CIE10_7 = 'R799' || CIE10_8 = 'R799' || CIE10_9 = 'R799' || CIE10_10 = 'R799') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R00($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R00' || CIE10_2 = 'R00' || CIE10_3 = 'R00' || CIE10_4 = 'R00' || CIE10_5 = 'R00' || CIE10_6 = 'R00' || CIE10_7 = 'R00' || CIE10_8 = '00' || CIE10_9 = 'R00' || CIE10_10 = 'R00') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R01($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R01' || CIE10_2 = 'R01' || CIE10_3 = 'R01' || CIE10_4 = 'R01' || CIE10_5 = 'R01' || CIE10_6 = 'R01' || CIE10_7 = 'R01' || CIE10_8 = 'R01' || CIE10_9 = 'R01' || CIE10_10 = 'R01') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R02($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R' || CIE10_2 = 'R02' || CIE10_3 = 'R02' || CIE10_4 = 'R02' || CIE10_5 = 'R02' || CIE10_6 = 'R02' || CIE10_7 = 'R02' || CIE10_8 = 'R02' || CIE10_9 = 'R02' || CIE10_10 = 'R02') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R03($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R03' || CIE10_2 = 'R03' || CIE10_3 = 'R03' || CIE10_4 = 'R03' || CIE10_5 = 'R03' || CIE10_6 = 'R03' || CIE10_7 = 'R03' || CIE10_8 = 'R03' || CIE10_9 = 'R03' || CIE10_10 = 'R') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R07($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R07' || CIE10_2 = 'R07' || CIE10_3 = 'R07' || CIE10_4 = 'R07' || CIE10_5 = 'R07' || CIE10_6 = 'R07' || CIE10_7 = 'R07' || CIE10_8 = 'R07' || CIE10_9 = 'R07' || CIE10_10 = 'R07') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R73($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R73' || CIE10_2 = 'R73' || CIE10_3 = 'R73' || CIE10_4 = 'R73' || CIE10_5 = 'R73' || CIE10_6 = 'R73' || CIE10_7 = 'R73' || CIE10_8 = 'R73' || CIE10_9 = 'R73' || CIE10_10 = 'R73') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+    public static function R79($conexion) {
+        $Razon = $_SESSION['Razon']; $Tipo1 = $_SESSION['Tipo1']; $Tipo2 = $_SESSION['Tipo2']; $Tipo3 = $_SESSION['Tipo3']; $Tipo4 = $_SESSION['Tipo4']; $Tipo5 = $_SESSION['Tipo5']; $Tipo6 = $_SESSION['Tipo6']; $Tipo7 = $_SESSION['Tipo7']; $Tipo8 = $_SESSION['Tipo8']; $Tipo9 = $_SESSION['Tipo9']; $Tipo10 = $_SESSION['Tipo10']; $Tipo11 = $_SESSION['Tipo11'];
+        $total_usuarios = null; 
+        if (isset($conexion)) {
+            $sql = "SELECT COUNT(*) as total FROM general2 WHERE (CIE10_1 = 'R79' || CIE10_2 = 'R79' || CIE10_3 = 'R79' || CIE10_4 = 'R79' || CIE10_5 = 'R79' || CIE10_6 = 'R79' || CIE10_7 = 'R79' || CIE10_8 = 'R79' || CIE10_9 = 'R79' || CIE10_10 = 'R79') &&  Certificado = '$Razon' && (Tipo_examen = '$Tipo1' || Tipo_examen = '$Tipo2' || Tipo_examen = '$Tipo3' || Tipo_examen = '$Tipo4' || Tipo_examen = '$Tipo5' || Tipo_examen = '$Tipo6' || Tipo_examen = '$Tipo7' || Tipo_examen = '$Tipo8' || Tipo_examen = '$Tipo9'  || Tipo_examen = '$Tipo10'  || Tipo_examen = '$Tipo11')";
+                    $sentencia = $conexion->prepare($sql);
+                    $sentencia->execute();
+                    $resultado = $sentencia->fetch();
+                    $total_usuarios = $resultado['total'];   
+        }
+        return $total_usuarios;
+    }
+
+}    
+?>
