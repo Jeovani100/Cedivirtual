@@ -1,0 +1,13 @@
+[31-Jan-2024 10:47:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/cedisalu/public_html/contador/usuarios.php on line 12
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fopen(dia.dat): failed to open stream: No such file or directory in /home/cedisalu/public_html/contador/visitas.php on line 13
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 14
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 15
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fopen(contar_dia.dat): failed to open stream: No such file or directory in /home/cedisalu/public_html/contador/visitas.php on line 23
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 24
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 30
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fopen(mes.dat): failed to open stream: No such file or directory in /home/cedisalu/public_html/contador/visitas.php on line 43
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 44
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 45
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fopen(contar_mes.dat): failed to open stream: No such file or directory in /home/cedisalu/public_html/contador/visitas.php on line 53
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 54
+[23-Jan-2025 03:53:22 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/cedisalu/public_html/contador/visitas.php on line 58
